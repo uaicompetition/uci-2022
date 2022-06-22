@@ -19,22 +19,15 @@ $$
 \end{align*}
 $$
 
-where 
-  
-$$Z^{*}$$ 
-  
+where  
+\$$Z^{*}$$ 
 is the true partition function and 
-
-
-$$Z_{solver}$$ 
-  
+\$$Z_{solver}$$  
 is the approximate partition function computed by the solver.<br>
 
   
 The final error for a solver is given by 
-
-$$Err_{solver} = sum_{i}Err_{solver}^{(i)},$$
-  
+\$$Err_{solver} = sum_{i}Err_{solver}^{(i)},$$
 and 
 the solver with least final error is decided as a winner.
 <\p>
