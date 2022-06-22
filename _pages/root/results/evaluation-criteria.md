@@ -41,7 +41,7 @@ $$
 
 where $$N$$ is the total number of variables, $$Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j))$$ is the Hellinger distance between 
 the true probability distribution corresponding to the $$j^{th}$$ variable $$( \mathbf{P}^{*}(V_j) )$$ and 
-the approximate one returned by the solver $$( \mathbf{P}(V_j))$$.
+the approximate one returned by the solver is $$({\mathbf{P}}(V_j))$$. <br>
 
 The final error for a solver $$M$$ is given by $$Err_M = \sum_{i} HErr_M^{(i)}$$.
   
