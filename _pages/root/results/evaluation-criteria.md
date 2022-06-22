@@ -13,8 +13,10 @@ permalink: /results/evaluation-criteria/
 For Evaluating the results produce by different MAP solvers we have used following two metrics:
 
 #### **Relative Gap From the Leader**
+
+<p>
 For each problem and for a solver \\( solver \\), 
-the score \\( S(solver) \\) is computed by
+the score \\( S(solver) \\) is computed by <br>
 
 $$ 
 \begin{aligned}
@@ -26,7 +28,7 @@ returned by \\(solver\\) and \\(M_{leader}\\) is the same for the best solver fo
 problem instance, i.e., solver with the highest MAP value.
 
 **Note**: For deciding the winner we have not used this metric as it gives higher importance to problem instances with smaller MAP value.
-
+</p>
 
 #### **Rank**
 For each problem, 
