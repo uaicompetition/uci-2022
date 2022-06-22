@@ -55,7 +55,7 @@ The first variable have the role of the 'most significant’ digit.
 | X | P(X) |
 | :--- | :----: | 
 | 0 | 0.436 |
-| 1 | 0.456 |
+| 1 | 0.564 |
 
 
 | X |	Y |	P(Y,X) |
