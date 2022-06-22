@@ -35,7 +35,7 @@ to a solver \\(M\\) is computed as follows. <br>
 
 $$ 
 \begin{align*}
- HErr_M^{(i)} &= frac{1}{N} \sum_{j=1}^{N} Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j)),
+ HErr_M^{(i)} &= \frac{1}{N} \sum_{j=1}^{N} Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j)),
 \end{align*}
 $$
 
