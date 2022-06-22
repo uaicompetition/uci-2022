@@ -5,9 +5,11 @@ permalink: /results/evaluation-criteria/
 ---
 
 ## PR Task
-For evaluating the results of different PR solvers 
-we compute the errors of the partition function. 
-The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows.<br>
+
+For evaluating the results of different PR solvers,
+we compute the errors of the partition function.
+
+The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows. <br>
 
 <p>
 $$ 
@@ -19,17 +21,19 @@ where \\(Z^{*}\\) is the true partition function and
 \\(Z_{solver}\\) is the approximate partition function computed by the solver.<br>
   
 The final error for a solver is given by 
-$$ Err_{solver} = sum_{i}Err_{solver}^{(i)}$$, and 
+\\(Err_{solver} = sum_{i}Err_{solver}^{(i)}\\), 
+and 
 the solver with least final error is decided as a winner.
 <\p>
 
   
 ## MAR Task
+  
 For Evaluating the results produce by different MAR solvers we have used the following two metrics.
   
 #### Hellinger Error
 For the \\(i^{th}\\) problem the Hellinger error corresponding 
-to a solver M is computed as follows. <br>
+to a solver \\(M\\) is computed as follows. <br>
 
 <p>
 $$ 
@@ -39,13 +43,14 @@ $$
 $$
 <\p>
 where \\(N\\) is the total number of variables, 
-$$Hell({bf P}^{*}(V_j),{bf P}(V_j))$$ is the Hellinger distance between 
+\\(Hell({bf P}^{*}(V_j),{bf P}(V_j))\\) is the Hellinger distance between 
 the true probability distribution corresponding to the 
 \\(j^{th}\\) variable 
 \\(({bf P}^{*}(V_j))\\) and 
 the approximate one returned by the solver \\(({bf P}(V_j))\\). <br>
 
-The final error for a solver \\(M\\) is given by $$Err_M = sum_{i}HErr_M^{(i)}$$.
+The final error for a solver \\(M\\) is given by 
+\\(Err_M = sum_{i}HErr_M^{(i)}\\).
   
 #### Max-Absolute Error
 For the \\(i^{th}\\) problem 
@@ -61,11 +66,11 @@ $$
 <\p>
 where the true probability distribution corresponding to the 
 \\(j^{th}\\) variable is 
-$$({bf P}^{*}(V_j))$$ and the approximate one returned by the solver is 
-$$({bf P}(V_j))$$. <br>
+\\(({bf P}^{*}(V_j))\\) and the approximate one returned by the solver is 
+\\(({bf P}(V_j))\\). <br>
 
 The final error for a solver \\(M \\) is given by 
-$$AErr_M = sum_{i}AErr_M^{(i)}$$.
+\\(AErr_M = sum_{i}AErr_M^{(i)}\\).
   
   
 ## MAP Task
