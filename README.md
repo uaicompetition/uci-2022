@@ -50,3 +50,6 @@ summary and leader boards are collections
 ### Links of MD files
 see https://jekyllrb.com/docs/permalinks/
 using `permalink: /:title/` in config casued several errors.
+
+### Using MaxJax
+* https://benlansdell.github.io/computing/mathjax/
