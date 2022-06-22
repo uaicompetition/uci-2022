@@ -64,9 +64,9 @@ $ ./solver --input $MODEL --evidence $EVID --query $QUERY --output $RESULT --som
 
 # the command in Docker file could be 
 CMD ["bash", "-c", "/root/solver --input $MODEL --evidence $EVID --query $QUERY --output $RESULT --some-parameter 1"] 
-```
-Or
-```
+
+# or if code was written in python, it could be
+
 $ python solver.py --input-path $MODEL --evid-path $EVID --output-path $RESULT  
 
 # the command in Docker file could be
