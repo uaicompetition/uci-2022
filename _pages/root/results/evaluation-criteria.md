@@ -12,20 +12,34 @@ we compute the errors of the partition function.
 The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows. <br>
 
 <p>
+
 $$ 
-\begin{aligned}
+\begin{align*}
   Err^{(i)}_{solver} &= | \log \frac{Z^{*}}{Z_{solver}} |,
-\end{aligned}
+\end{align*}
 $$
-where \\(Z^{*}\\) is the true partition function and 
-\\(Z_{solver}\\) is the approximate partition function computed by the solver.<br>
+
+where 
+  
+$$Z^{*}$$ 
+  
+is the true partition function and 
+
+
+$$Z_{solver}$$ 
+  
+is the approximate partition function computed by the solver.<br>
+
   
 The final error for a solver is given by 
-\\(Err_{solver} = sum_{i}Err_{solver}^{(i)}\\), 
+
+$$Err_{solver} = sum_{i}Err_{solver}^{(i)},$$
+  
 and 
 the solver with least final error is decided as a winner.
 <\p>
 
+  
   
 ## MAR Task
   
@@ -37,9 +51,9 @@ to a solver \\(M\\) is computed as follows. <br>
 
 <p>
 $$ 
-\begin{aligned}
+\begin{align*}
  HErr_M^{(i)} &= frac{1}{N} sum_{j=1}^{N} Hell({bf P}^{*}(V_j),{bf P}(V_j)),
-\end{aligned}
+\end{align*}
 $$
 <\p>
 where \\(N\\) is the total number of variables, 
@@ -59,9 +73,9 @@ the max absolute error corresponding to a solver \\(M\\) is computed as follows.
 
 <p>
 $$ 
-\begin{aligned}
+\begin{align*}
 AErr_M{(i)} &= frac{1}{N} sum_{j=1}^{N} max_k |P^{*}(V_j = k)-P(V_j = k)|.
-\end{aligned}
+\end{align*}
 $$
 <\p>
 where the true probability distribution corresponding to the 
@@ -76,7 +90,7 @@ The final error for a solver \\(M \\) is given by
 ## MAP Task
 For Evaluating the results produce by different MAP solvers we have used following two metrics.
 
-#### **Relative Gap From the Leader**
+#### Relative Gap From the Leader
 
 
 For each problem and for a solver \\( solver \\), 
@@ -84,9 +98,9 @@ the score \\( S(solver) \\) is computed as follows. <br>
 
 <p>
 $$ 
-\begin{aligned}
+\begin{align*}
 S(solver) &= \frac{M_{leader} - M_{solver}}{M_{leader}},
-\end{aligned}
+\end{align*}
 $$
 where \\(M_{solver}\\) is the \\(\log MAP\\) value of the result 
 returned by \\(solver\\) and \\(M_{leader}\\) is the same for the best solver for this
@@ -95,7 +109,7 @@ problem instance, i.e., solver with the highest MAP value.
 **Note**: For deciding the winner we have not used this metric as it gives higher importance to problem instances with smaller MAP value.
 </p>
 
-#### **Rank**
+#### Rank
 For each problem, 
 each solver is ranked in terms of its solution quality, 
 i.e.– solvers with higher MAP value gets smaller rank and the winner(s) 
