@@ -14,7 +14,8 @@ For Evaluating the results produce by different MAP solvers we have used followi
 
 #### **Relative Gap From the Leader**
 For each problem for a solver, the score $S(solver)$ is computed by
-$$ S(solver) = \frac{M_{leader} - M_{solver}}{M_{leader}}$$
+$$ S(solver) = \frac{M_{leader} - M_{solver}}{M_{leader}},$$
+where
 
 
 #### **Rank**
