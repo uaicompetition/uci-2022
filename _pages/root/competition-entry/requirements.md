@@ -59,6 +59,8 @@ We will use **environment variables** to pass the path of the input and output f
 * `QUERY` filename is only relevant to the marginal MAP task, so solvers working on the other three tasks should ignore this file.
 * some bash command could launch solvers withenvironment variables. Please see example Dockerfile in the docker project.
 * for example, 
+
+
 ```
 $ ./solver --input $MODEL --evidence $EVID --query $QUERY --output $RESULT --some-parameter 1
 
