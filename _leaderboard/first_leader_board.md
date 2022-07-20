@@ -1,6 +1,6 @@
 ---
+layout: default
 title: "Leader board is live"
-last_modified_at: 2022-07-20
 ---
 
 ## MPE
