@@ -2,4 +2,7 @@
 title: "Result Board"
 excerpt: "Evaluation Results with UAI 2014 Problems"
 ---
-
+{% for p in site.leaderboard %}
+  {{ p}}
+  {{ p.title }}
+{% endfor %}
