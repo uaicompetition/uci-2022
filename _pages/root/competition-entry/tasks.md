@@ -9,7 +9,7 @@ permalink: /competition-entry/tasks/
 * 20 sec, 100 sec, 20 min time limits
 
 **MAR :** 
-&nbsp; computing the marginal probability distribution over a variable given evidence
+&nbsp; computing the marginal probability distribution over all variables given evidence
 * single CPU, 8 GB memory limit
 * 20 sec, 100 sec, 20 min time limits
 
