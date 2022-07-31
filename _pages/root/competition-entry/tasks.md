@@ -40,7 +40,7 @@ $$
 $$
 
 **MMAP :**
-&nbsp; computing the most likely assignment to a subset of variables that maximizes the marginals on the remaining variables
+&nbsp; computing the most likely assignment to a subset of variables, $$ X_M $$ when marganlizing the remaining variables
 * \( X_M \subset X' \)
 * \( X_S = X' \setminus X_M \)
 
