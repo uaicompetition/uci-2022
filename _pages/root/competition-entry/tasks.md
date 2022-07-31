@@ -6,8 +6,8 @@ permalink: /competition-entry/tasks/
 
 Tasks are each with respect to a graphical model $$ \mathcal{M} = < X, D, F> $$, where:
 * $$ X = \{ X_1, X_2, ..., X_N \} $$ is the set of the model's variables
-* $$ D = \{ D_{X_1}, D_{X_2}, ..., D_{X_N} \} is the set of discrete domains for each variable
-* $$ F = \{ f_1, f_2, ..., f_M \} is the set of functions defined over the model
+* $$ D = \{ D_{X_1}, D_{X_2}, ..., D_{X_N} \} $$ is the set of discrete domains for each variable
+* $$ F = \{ f_1, f_2, ..., f_M \} $$ is the set of functions defined over the model
 
 $$ X $$ can be further partitioned into two sets, $$ E $$ and $$ X' $$, where:
 * $$ E $$ are the evidence variables for which assignments are observed (ie. given)
@@ -35,17 +35,17 @@ $$
 &nbsp; computing the most likely assignment to all variables given evidence
 $$ 
 \begin{align*}
-  MAP(X_i|E=e) = \argmax_{X'} \prod_{F} f(x',e)
+  MAP(X_i|E=e) = argmax_{X'} \prod_{F} f(x',e)
 \end{align*}
 $$
 
 **MMAP :**
 &nbsp; computing the most likely assignment to a subset of variables that maximizes the marginals on the remaining variables
-* $$ X_M \subset X' $$
-* $$ X_S = X' \setminus X_M $$
+* \( X_M \subset X' \)
+* \( X_S = X' \setminus X_M \)
 $$ 
 \begin{align*}
-  MMAP(X_i|E=e) = \argmax_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
+  MMAP(X_i|E=e) = argmax_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
 \end{align*}
 $$
 
