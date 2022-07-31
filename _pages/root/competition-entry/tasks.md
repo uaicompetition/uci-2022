@@ -53,7 +53,7 @@ $$
 All inference tasks (above) will be given one CPU and 8GB of ram and will be tested in three different time categories:
 * 20 sec
 * 100 sec
-* 2o min (1200 sec)
+* 20 min (1200 sec)
 
 **MLC** *(new!)* **:** 
 &nbsp; multi-label classification of a subset of variables of given a model and observed evidence (through learning, inference, or any other method of your choice).
