@@ -1,5 +1,6 @@
 ---
 title: "Tasks"
+usemathjax: true
 permalink: /competition-entry/tasks/
 ---
 
