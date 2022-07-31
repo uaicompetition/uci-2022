@@ -43,6 +43,7 @@ $$
 &nbsp; computing the most likely assignment to a subset of variables that maximizes the marginals on the remaining variables
 * \( X_M \subset X' \)
 * \( X_S = X' \setminus X_M \)
+
 $$ 
 \begin{align*}
   MMAP(X_i|E=e) = argmax_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
