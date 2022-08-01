@@ -41,8 +41,8 @@ $$
 
 **MMAP :**
 &nbsp; computing the most likely assignment to a subset of variables, $$ X_M $$ when marganlizing the remaining variables
-* \( X_M \subset X' \)
-* \( X_S = X' \setminus X_M \)
+* $$ X_M \subset X' $$
+* $$ X_S = X' \setminus X_M $$
 
 $$ 
 \begin{align*}
@@ -52,8 +52,8 @@ $$
 
 All inference tasks (above) will be given one CPU and 8GB of ram and will be tested in three different time categories:
 * 20 sec
-* 100 sec
-* 20 min (1200 sec)
+* 20 min
+* 2 hours
 
 **MLC** *(new!)* **:** 
 &nbsp; multi-label classification of a subset of variables of given a model and observed evidence (through learning, inference, or any other method of your choice).
