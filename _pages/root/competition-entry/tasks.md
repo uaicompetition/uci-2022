@@ -4,14 +4,15 @@ usemathjax: true
 permalink: /competition-entry/tasks/
 ---
 
+## Probabilistic Inference Tasks
+
 Tasks are each with respect to a graphical model $$ \mathcal{M} = < X, D, F> $$, where:
 * $$ X = \{ X_1, X_2, ..., X_N \} $$ is the set of the model's variables
 * $$ D = \{ D_{X_1}, D_{X_2}, ..., D_{X_N} \} $$ is the set of discrete domains for each variable
 * $$ F = \{ f_1, f_2, ..., f_M \} $$ is the set of the model's functions
 
-$$ X $$ can be further partitioned into two sets, $$ E $$ and $$ X' $$, where:
-* $$ E $$ are the evidence variables for which assignments are observed (ie. given)
-* $$ X' = X \setminus E $$ are the unknown variables
+$$ X $$ can be further partitioned into two sets, 
+evidence variables $$ E $$ and the rest $$ X'= X \setminus E  $$.
 
 
 **PR :** 
@@ -35,14 +36,13 @@ $$
 &nbsp; computing the most likely assignment to all variables given evidence
 $$ 
 \begin{align*}
-  MAP(X_i|E=e) = argmax_{X'} \prod_{F} f(x',e)
+  MAP(X_i|E=e) = \arg \max_{X'} \prod_{F} f(x',e)
 \end{align*}
 $$
 
 **MMAP :**
-&nbsp; computing the most likely assignment to a subset of variables, $$ X_M $$ when marganlizing the remaining variables
-* $$ X_M \subset X' $$
-* $$ X_S = X' \setminus X_M $$
+&nbsp; computing the most likely assignment to the query variables, $$ X_M \subset X' $$ 
+after marginalizing out when marganlizing the remaining variables $$ X_S = X' \setminus X_M $$.
 
 $$ 
 \begin{align*}
@@ -50,10 +50,13 @@ $$
 \end{align*}
 $$
 
-All inference tasks (above) will be given one CPU and 8GB of ram and will be tested in three different time categories:
+### All inference tasks will be given one CPU and 8GB of ram and will be tested in three different time categories:
 * 20 sec
 * 20 min
 * 2 hours
+
+
+## Multi-Label Classification Task
 
 **MLC** *(new!)* **:** 
 &nbsp; multi-label classification of a subset of variables of given a model and observed evidence (through learning, inference, or any other method of your choice).
