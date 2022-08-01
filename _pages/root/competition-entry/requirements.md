@@ -24,7 +24,7 @@ Each image should be equipped with an executable and a folder to mount the host 
 While running the image, the names of the files will be passed as environment variables (see section below on
 Environment Variables) so the image can execute bash commands with them.
 
-* **Please checkout a minimal example docker project https://github.com/dechterlab/daoopt-docker**
+* **[Please checkout a minimal example docker project](https://github.com/dechterlab/daoopt-docker)**
 
 
 #### Environment Variables for reading/writing 
@@ -46,7 +46,7 @@ followings are the example usage of such environment variables during the compet
 * Each solver should assume that necessary files will be mounted under `/code/problems` folder inside the image.
 Please create `/problems` directory when you `COPY` your necessary files into image, and
 put all the codes under `/code` by `COPY . /code`
-* **Please check out the minimal example docker project, https://github.com/dechterlab/daoopt-docker**
+* **[Please checkout a minimal example docker project](https://github.com/dechterlab/daoopt-docker)**
 
 The file formats are described here:
 * [Model Format](../file-formats/model-format.md)   
