@@ -9,74 +9,44 @@ permalink: /competition-entry/requirements/
 ### Execution Environment
 
 * The evaluations will be run on Linux machines with up to **8 GB memory** made available.
-
 * We request that solvers be submitted as Docker images that containerize executables using only **a single core (i.e., no parallel processes/threads)**.
-
 * Each submission will be evaluated using [Singularity](https://sylabs.io/guides/2.6/user-guide/index.html) 
 with restrictied computing resource per image as described in the [Tasks](./tasks.md) descriptions.
 
 
 ### Containerizing Solvers in Docker
 We will be accepting submissions as Docker images. Participants have two options:
-
 1. _(PREFERRED)_ Create a Docker project and upload its image to [Dockerhub](https://hub.docker.com/).
-    
-    You will submit the Dockerhub repository `<ID>/<REPO>` tags so that we can:
-      * pull the image `$ docker pull <ID>/<REPO>:latest` or
-      * build singularity image  
- 
-    ```
-    $ singularity build --bind <HOST_FOLDER>:<IMAGE_FOLDER> <SOLVERNAME>.sif --writable docker://<ID>/<REPO>
-    ```
-
 2. Directly submit a Docker project (as opposed to the already built image) with all necessary local files to build an image
 
-    Then a Docker image will be built locally using the command:
-    ```
-    $ docker build -t <ID>:<NAME> . 
-    ```
-
-
 ### How to Containerize Solvers in Docker
-Solvers containerized as a Docker image will allow use of any working environment seamlessly,
-indepent to the CentOS-based cluster environment at UCI.
-
 Each image should be equipped with an executable and a folder to mount the host directory during evaluation.
 While running the image, the names of the files will be passed as environment variables (see section below on
 Environment Variables) so the image can execute bash commands with them.
+Please checkout a minimal example docker project
+* https://github.com/dechterlab/daoopt-docker
 
 
-### Example Docker projects
-Please see the following example projects
-and don't hesitate to contact oragnizers if any help or clarification neeeded.
-* https://github.com/uaicompetition/docker-merlin-cpp: build executable from source
-* https://github.com/uaicompetition/docker-merlin-cpp/tree/merlinbin: copy statically compiled executable inside image and define environment variables
-
-
-### Environment Variables 
-We will use **environment variables** to pass the path of the input and output files.
-* `MODEL`, `EVID`, `QUERY`, `RESULT` are the environment variables that will be used to pass the path of their respective files.
+#### Environment Variables for reading/writing 
+We will use **environment variables** to pass the path of the input and output files and
+followings are the example usage of such environment variables during the competition from organizers
+* `MODEL`: /code/problems/pedigree-1.uai
+* `EVID`: /code/problems/pedigree-1.uai.evid
+* `QUERY: /code/problems/pedigree-1.uai.query
+* `RESULT: /code/problems/pedigree-1.uai.MMAP
 * `QUERY` filename is only relevant to the marginal MAP task, so solvers working on the other three tasks should ignore this file.
-* some bash command could launch solvers withenvironment variables. Please see example Dockerfile in the docker project.
-* for example, 
+* Although the name of the files can be arbitrary, we will use a convention that extends the name of the `MODEL` files.
+  * `EVID` files add `.evid', `QUERY` files add `.qeury`, `RESULT` files add `PR/MAR/MPE/MMAP' depending on the task, 
 
+#### Environment Variables for limiting time and memory
+* `TIMESEC` is the time limit in seconds.
+* `MEMKB` is the memory limit in KB.
 
-```
-$ ./solver --input $MODEL --evidence $EVID --query $QUERY --output $RESULT --some-parameter 1
-
-# the command in Docker file could be 
-CMD ["bash", "-c", "/root/solver --input $MODEL --evidence $EVID --query $QUERY --output $RESULT --some-parameter 1"] 
-
-# or if code was written in python, it could be
-
-$ python solver.py --input-path $MODEL --evid-path $EVID --output-path $RESULT  
-
-# the command in Docker file could be
-CMD ["bash", "-c", "python solver.py --input-path $MODEL --evid-path $EVID --output-path $RESULT"] 
-```
-* Note that we don't pose any restriction on how to utilize 4 environment varaibles,
-and each solver can assume that necessary files will be mounted under `/problems` folder inside the image.
-Please create `/problems` directory when you `COPY` your necessary files into image.
+#### Directories
+* Each solver should assume that necessary files will be mounted under `/code/problems` folder inside the image.
+Please create `/problems` directory when you `COPY` your necessary files into image, and
+put all the codes under `/code` by `COPY . /code`
+* Please check out the minimal example docker project, https://github.com/dechterlab/daoopt-docker
 
 The file formats are described here:
 * [Model Format](../file-formats/model-format.md)   
