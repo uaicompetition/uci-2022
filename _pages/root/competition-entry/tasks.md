@@ -46,7 +46,7 @@ after marginalizing out when marganlizing the remaining variables $$ X_S = X' \s
 
 $$ 
 \begin{align*}
-  MMAP(X_i|E=e) = argmax_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
+  MMAP(X_i|E=e) = \arg \max_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
 \end{align*}
 $$
 
