@@ -9,16 +9,15 @@ For the details, please contact organizers by `uaicompetition at gmail dot com`
 * May, 2022
   * Site open to public
   * Call for participations
-* June, 2022
-  * Release of sample benchmark sets
-  * Solver submission opens (June 15th)
 * July, 2022
-  * Evaluations begin!
-* August, 2022
-  * Mid-competition update (to be reported at UAI-2022)
-* October, 2022
+  * Inference solver submission opens
+* September 2022 
+  * MLC solver submission opens
+  * Release of sample benchmark sets
+  * Tuning phase commences
+* November 2022
   * Solver submissions close
-  * Final competition results announced!
+  * Final results reported
 
 
 
