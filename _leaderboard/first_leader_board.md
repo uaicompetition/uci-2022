@@ -1,10 +1,9 @@
 ---
-title: "Preliminary MPE Evaluation with Non-participating Solvers"
+title: "MPE results from non-participating solvers"
 ---
 
 We show the preliminary evaluation results from non-participating solvers.
 They are mostly submitted solvers in the previous competitions.
-
 We will periodically evaluate submitted solvers together with non-participating solvers.
 
 
