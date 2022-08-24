@@ -1,5 +1,5 @@
 ---
-title: "MPE results from non-participating solvers"
+title: "Aug 24th. MPE results from non-participating solvers"
 ---
 
 We show the preliminary evaluation results from non-participating solvers.
