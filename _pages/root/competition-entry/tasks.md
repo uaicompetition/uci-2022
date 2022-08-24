@@ -51,9 +51,9 @@ $$
 $$
 
 ### All inference tasks will be given one CPU and 8GB of ram and will be tested in three different time categories:
-* 20 sec
-* 20 min
-* 2 hours
+* 20 seconds
+* 20 minutes
+* 1 hour
 
 
 ## Multi-Label Classification Task
