@@ -139,6 +139,7 @@ The following table shows the solutions per 3 algorithm configurations.
 
 
 ## 20 mins
+
 | problems   | daoopt-20min-ib1| daoopt-20min-ib10| daoopt-20min-ib25|
 |--------------------|--------------------|--------------------|--------------------|
 | Grids_18| 5506.74973213| 5674.43175168| 5674.43175168|
