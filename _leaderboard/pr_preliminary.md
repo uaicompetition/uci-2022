@@ -1,5 +1,5 @@
 ---
-title: "PR results from non-participating solvers"
+title: "Aug 24th. PR results from non-participating solvers"
 ---
 
 We show the preliminary evaluation results from non-participating solvers.
