@@ -39,11 +39,15 @@ Each table shows the sum of normalized scores from all problems.
 
 ## MMAP Task
 
- 
+ <details>
 
+ 
+ ### table
+ 
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
   | daoopt | 98.211 | 114.391 | 112.646 |
   |lbp | -118 | -2.683 |6.078 |
   |uai14-ihler | -39.968 | -29.564 |-39.314|
 
+</details>
