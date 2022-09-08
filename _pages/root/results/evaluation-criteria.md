@@ -5,7 +5,7 @@ permalink: /results/evaluation-criteria/
 ---
 
 ## PR Task
-### computing errors from PR files
+### Computing errors from PR files
 We compute the errors of the partition function to evaluate solvers.
 The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows. <br>
 
@@ -18,12 +18,12 @@ $$
 where $$ Z^{*} $$ 
 is the true partition function and $$ Z_{solver} $$ is the approximate partition function computed by the solver.
 
-### normalizing scores
+### Normalizing scores
 We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{Maximum Err}.
+  Score^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{\text{Max Err}}.
 \end{align*}
 $$
 
@@ -31,13 +31,13 @@ $$
 * If a solver returned the worst answer, the score will be 0.
 * If a solver didn't return any answer, the score will be -1.
 
-### ranking solvers
-the final ranking will be determined by the total score.
+### Ranking solvers
+The final ranking will be determined by the total score.
 
   
 ## MAR Task
 
-### computing Hellinger errors from MAR files
+### Computing Hellinger errors from MAR files
   
 For the \\(i^{th}\\) problem, the Hellinger error corresponding 
 to a solver \\(M\\) is computed as follows. <br>
@@ -53,12 +53,12 @@ $$Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j))$$ is the Hellinger distance betw
 the true probability distribution corresponding to the $$j^{th}$$ variable $$( \mathbf{P}^{*}(V_j) )$$ and 
 the approximate one returned by the solver is $$({\mathbf{P}}(V_j))$$. <br>
 
-### normalizing scores
+### Normalizing scores
 We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= 1 - \frac{HErr^{(i)}_{solver}}{Maximum HErr}.
+  Score^{(i)}_{solver} &= 1 - \frac{HErr^{(i)}_{solver}}{\text{Max HErr}}.
 \end{align*}
 $$
 
@@ -66,17 +66,17 @@ $$
 * If a solver returned the worst answer, the score will be 0.
 * If a solver didn't return any answer, the score will be -1.
 
-### ranking solvers
-the final ranking will be determined by the total score.
+### Ranking solvers
+The final ranking will be determined by the total score.
     
   
 ## MAP Task
 
-### computing log MEP value from MPE files
+### Computing log MEP value from MPE files
 
 For the \\(i^{th}\\) problem, we compute log MPE value. <br>
 
-### normalizing scores
+### Normalizing scores
 We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing log MPE values as follows. <br>
 
 
@@ -95,8 +95,8 @@ $$ log(MPE)^{(i)}_{worst} $$ is the worst log MPE value.
 * If a solver returned the worst answer, the score will be 0.
 * If a solver didn't return any answer, the score will be -1.
 
-### ranking solvers
-the final ranking will be determined by the total score.
+### Ranking solvers
+The final ranking will be determined by the total score.
 
 
 ## MMAP Task
