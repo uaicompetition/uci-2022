@@ -11,6 +11,7 @@ Each table shows the sum of normalized scores from all problems.
 ## PR Task
 
 ### total score
+
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
   | lbp  | -119.0 | -2.0   | -2.0 | 
@@ -20,6 +21,7 @@ Each table shows the sum of normalized scores from all problems.
 ## MAR Task
  
 ### total score
+
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
   | lbp  | -124.0 | -4.0   | -1.0 | 
@@ -29,6 +31,7 @@ Each table shows the sum of normalized scores from all problems.
 ## MPE Task
 
 ### total score
+
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
   |dallouche| 84.0479 |  87.374 | 89.447 |
@@ -42,7 +45,9 @@ Each table shows the sum of normalized scores from all problems.
 ### total score
 
 <details>
+  
   <br>
+  
   
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
