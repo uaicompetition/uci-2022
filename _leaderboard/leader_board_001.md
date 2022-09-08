@@ -2,7 +2,7 @@
 title: "Sep 7th. Mini Evaluation of Submitted Solvers"
 ---
 
-Each table shows the sum of normalized scores.
+Each table shows the sum of normalized scores from a subset of UAI-2014 competition problems.
 
 ## PR Task
 
