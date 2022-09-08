@@ -40,11 +40,11 @@ The final ranking will be determined by the total score.
 ### Computing Hellinger errors from MAR files
   
 For the \\(i^{th}\\) problem, the Hellinger error corresponding 
-to a solver \\(M\\) is computed as follows. <br>
+to a solver \\(solver\\) is computed as follows. <br>
 
 $$ 
 \begin{align*}
- HErr_M^{(i)} &= \frac{1}{N} \sum_{j=1}^{N} Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j)),
+ HErr_{solver}^{(i)} &= \frac{1}{N} \sum_{j=1}^{N} Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j)),
 \end{align*}
 $$
 
