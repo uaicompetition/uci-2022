@@ -5,12 +5,9 @@ permalink: /results/evaluation-criteria/
 ---
 
 ## PR Task
-
-For evaluating the results of different PR solvers,
-we compute the errors of the partition function.
-
+### computing errors from PR files
+We compute the errors of the partition function to evaluate solvers.
 The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows. <br>
-
 
 $$ 
 \begin{align*}
@@ -20,17 +17,29 @@ $$
 
 where $$ Z^{*} $$ 
 is the true partition function and $$ Z_{solver} $$ is the approximate partition function computed by the solver.
-  
-The final error for a solver is given by $$ Err_{solver} = \sum_{i} Err_{solver}^{(i)}$$,
-and the solver with least final error is decided as a winner.
+
+### normalizing scores
+We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
+
+$$ 
+\begin{align*}
+  Score^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{Maximum Err}.
+\end{align*}
+$$
+
+* If solver returned the exact answer, the score will be +1.
+* If a solver returned the worst answer, the score will be 0.
+* If a solver didn't return any answer, the score will be -1.
+
+### ranking solvers
+the final ranking will be determined by the total score.
 
   
 ## MAR Task
+
+### computing Hellinger errors from MAR files
   
-For Evaluating the results produce by different MAR solvers we use the following two metrics.
-  
-#### Hellinger Error
-For the \\(i^{th}\\) problem the Hellinger error corresponding 
+For the \\(i^{th}\\) problem, the Hellinger error corresponding 
 to a solver \\(M\\) is computed as follows. <br>
 
 $$ 
@@ -39,60 +48,55 @@ $$
 \end{align*}
 $$
 
-where $$N$$ is the total number of variables, $$Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j))$$ is the Hellinger distance between 
+where $$N$$ is the total number of variables, 
+$$Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j))$$ is the Hellinger distance between 
 the true probability distribution corresponding to the $$j^{th}$$ variable $$( \mathbf{P}^{*}(V_j) )$$ and 
 the approximate one returned by the solver is $$({\mathbf{P}}(V_j))$$. <br>
 
-The final error for a solver $$M$$ is given by $$Err_M = \sum_{i} HErr_M^{(i)}$$.
-  
-#### Max-Absolute Error
-For the \\(i^{th}\\) problem 
-the max absolute error corresponding to a solver \\(M\\) is computed as follows. <br>
-
+### normalizing scores
+We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
 
 $$ 
 \begin{align*}
-AErr_M{(i)} &= \frac{1}{N} \sum_{j=1}^{N} \max_k | \mathbf{P}^{*}(V_j = k) - \mathbf{P}(V_j = k) |,
+  Score^{(i)}_{solver} &= 1 - \frac{HErr^{(i)}_{solver}}{Maximum HErr}.
 \end{align*}
 $$
 
-where the true probability distribution corresponding to the $$j^{th}$$ variable is $$({\mathbf{P}}^{*}(V_j))$$ and 
-the approximate one returned by the solver is $$({\mathbf{P}}(V_j))$$. <br>
+* If solver returned the exact answer, the score will be +1.
+* If a solver returned the worst answer, the score will be 0.
+* If a solver didn't return any answer, the score will be -1.
 
-The final error for a solver \\(M \\) is given by $$AErr_M = \sum_{i} AErr_M^{(i)}$$.
-  
+### ranking solvers
+the final ranking will be determined by the total score.
+    
   
 ## MAP Task
-For Evaluating the results produce by different MAP solvers we use following two metrics.
 
-#### Relative Gap From the Leader
+### computing log MEP value from MPE files
 
+For the \\(i^{th}\\) problem, we compute log MPE value. <br>
 
-For each problem and for a solver \\( solver \\), 
-the score \\( S(solver) \\) is computed as follows. <br>
+### normalizing scores
+We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing log MPE values as follows. <br>
 
 
 $$ 
 \begin{align*}
-S(solver) &= \frac{M_{leader} - M_{solver}}{M_{leader}},
+  Score^{(i)}_{solver} &= \frac{log(MPE)^{(i)}_{solver} - log(MPE)^{(i)}_{worst}}{log(MPE)^{(i)}_{best} - log(MPE)^{(i)}_{worst}},
 \end{align*}
 $$
 
-where \\(M_{solver}\\) is the \\(\log MAP\\) value of the result 
-returned by \\(solver\\) and \\(M_{leader}\\) is the same for the best solver for this
-problem instance, i.e., solver with the highest MAP value.
+where 
+where $$ log(MPE)^{(i)}_{solver} $$  is the log MPE value from the solver,
+$$ log(MPE)^{(i)}_{best} $$ is the best known log MPE value, and
+$$ log(MPE)^{(i)}_{worst} $$ is the worst log MPE value.
 
-**Note**: For deciding the winner we don't used this metric as it gives higher importance to problem instances with smaller MAP value.
+* If solver returned the exact or best known answer, the score will be +1.
+* If a solver returned the worst answer, the score will be 0.
+* If a solver didn't return any answer, the score will be -1.
 
-
-#### Rank
-For each problem, 
-each solver is ranked in terms of its solution quality, 
-i.e.– solvers with higher MAP value gets smaller rank and the winner(s) 
-for that problem gets the rank 1. 
-Finally, we add all the ranks of a solver in all the problems. 
-The winner of the competition is selected using this metric. 
-The solver which has lowest cumulative score is decided as a winner.
+### ranking solvers
+the final ranking will be determined by the total score.
 
 
 ## MMAP Task
