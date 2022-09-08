@@ -10,33 +10,23 @@ Each table shows the sum of normalized scores from all problems.
 
 ## PR Task
 
-<details>
-
-  
-  
+ 
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|--------:|------:|
   | lbp  | -119.0 | -2.0   | -2.0 | 
   | uai14-ihler | 59.901 | 129.739 | 129.514 |
 
-</details>
-
 
 ## MAR Task
-
-<details>
-  
+ 
   
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|:--------:|------:|
   | lbp  | -124.0 | -4.0   | -1.0 | 
   | uai14-ihler | 35.554 | 129.908 | 129.978 |
 
-</details>
 
 ## MPE Task
-
-<details>
 
 
   | time | 20 sec | 20 min | 1 hr |
@@ -46,12 +36,10 @@ Each table shows the sum of normalized scores from all problems.
   |daoopt-weak | 27.055 | 54.431 | 57.671  |
   |uai14-ihler| 13.141 | 14.817 | 15.611 |  
 
-</details>
 
 ## MMAP Task
 
-<details>
-  
+ 
 
   | time | 20 sec | 20 min | 1 hr |
   |:------|--------:|:--------:|------:|
@@ -59,4 +47,3 @@ Each table shows the sum of normalized scores from all problems.
   |lbp | -118 | -2.683 |6.078 |
   |uai14-ihler | -39.968 | -29.564 |-39.314|
 
-</details>
