@@ -78,6 +78,7 @@ The evaluation results are organized in the following structure.
 
 * Each cell shows the individual score and the returned solution.
 
+
 ## PR Task
 
 | solver | problem | 20 sec | 1200 sec | 3600 sec |
@@ -359,6 +360,7 @@ The evaluation results are organized in the following structure.
 
 ## MAR Task
 
+
 | solver | problem | 20 sec | 1200 sec | 3600 sec |
 |:--------|--------:|--------:|--------:|--------:|
 | lbp-ihler-mar | Alchemy_11 | -1.00 (  nan) | 0.00 (0.112756) | 0.00 (0.112756) |
@@ -627,7 +629,9 @@ The evaluation results are organized in the following structure.
 | uai14-ihler-mar | relational_5 | 0.00 (84.349839) | 1.00 (0.000000) | 1.00 (0.000000) |
 
 
+
 ## MPE Task
+
 
 | solver | problem | 20 sec | 1200 sec | 3600 sec |
 |:--------|--------:|--------:|--------:|--------:|
@@ -1593,7 +1597,11 @@ The evaluation results are organized in the following structure.
 | uai14-ihler-mpe | wcsp_18 | 0.00 (-32.000000) | 0.00 (-32.000000) | 0.00 (-32.000000) |
 
 
+
+
 ## MMAP Task
+
+
 | solver | problem | 20 sec | 1200 sec | 3600 sec |
 |:--------|--------:|--------:|--------:|--------:|
 | daoopt-1hr-ib35 | Grids_18 | - (-) | - (-) | 1.00 (5678.697565) |
