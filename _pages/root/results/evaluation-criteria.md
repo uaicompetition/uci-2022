@@ -5,9 +5,8 @@ permalink: /results/evaluation-criteria/
 ---
 
 ## PR Task
-### Computing errors from PR files
-We compute the errors of the partition function to evaluate solvers.
-The error of a solver \\(solver\\) on the \\(i^{th}\\) instance is computed as follows. <br>
+### Computing PR errors
+For each partition function problem instance \\(i\\) tested, we compute solver errors in the following way: <br>
 
 $$ 
 \begin{align*}
@@ -16,23 +15,26 @@ $$
 $$
 
 where $$ Z^{*} $$ 
-is the true partition function and $$ Z_{solver} $$ is the approximate partition function computed by the solver.
+is the true partition function value and $$ Z_{solver} $$ is the approximate partition function value computed by the solver.
 
 ### Normalizing scores
-We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
+In order to assign final scores to each solver that consider all problems tested on, we first normalize the errors computed on each problem instance so that they can be aggregated in a way that each contributes equally to the final score.  We compute this normalized error in the following way: <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{\text{Max Err}}.
+  ErrNorm^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{MaxErr}.
 \end{align*}
 $$
+
+where $$ MaxErr $$ 
+is the error that results from a trivial solver.
 
 * If solver returned the exact answer, the score will be +1.
 * If a solver returned the worst answer, the score will be 0.
 * If a solver didn't return any answer, the score will be -1.
 
 ### Ranking solvers
-The final ranking will be determined by the total score.
+The final ranking will be determined by the average normalized error across all problems tested on.
 
   
 ## MAR Task
