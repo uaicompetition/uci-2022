@@ -10,12 +10,12 @@ For each partition function problem instance \\(i\\) tested, we compute solver e
 
 $$ 
 \begin{align*}
-  Err^{(i)}_{solver} &= | \log \frac{Z^{*}}{Z_{solver}} |,
+  Err^{(i)}_{solver} &= | \log \frac{Z^{*(i)}}{Z^{(i)}_{solver}} |,
 \end{align*}
 $$
 
-where $$ Z^{*} $$ 
-is the true partition function value and $$ Z_{solver} $$ is the approximate partition function value computed by the solver.
+where $$ Z^{*(i)} $$ 
+is the true partition function value for problem instance \\(i\\) and $$ Z^{(i)}_{solver} $$ is the approximate partition function value as computed by the solver.
 
 ### Normalizing scores
 In order to assign final scores to each solver that consider all problems tested on, we first normalize the errors computed on each problem instance so that they can be aggregated in a way that each contributes equally to the final score.  We compute this normalized error in the following way: <br>
