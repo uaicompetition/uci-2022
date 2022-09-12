@@ -17,24 +17,24 @@ $$
 where $$ Z^{*(i)} $$ 
 is the true partition function value for problem instance \\(i\\) and $$ Z^{(i)}_{solver} $$ is the approximate partition function value as computed by the solver.
 
-### Normalizing scores
+### Normalizing errors
 In order to assign final scores to each solver that consider all problems tested on, we first normalize the errors computed on each problem instance so that they can be aggregated in a way that each contributes equally to the final score.  We compute this normalized error in the following way: <br>
 
 $$ 
 \begin{align*}
-  ErrNorm^{(i)}_{solver} &= 1 - \frac{Err^{(i)}_{solver}}{MaxErr}.
+  ErrNorm^{(i)}_{solver} &= max(0, 1 - \frac{Err^{(i)}_{solver}}{MaxErr^{(i)}}).
 \end{align*}
 $$
 
-where $$ MaxErr $$ 
-is the error that results from a trivial solver.
+where $$ MaxErr^{(i)} $$ 
+is the error that results from the solution produced by a trivial solver on problem instance \\(i\\).
 
 * If solver returned the exact answer, the score will be +1.
-* If a solver returned the worst answer, the score will be 0.
-* If a solver didn't return any answer, the score will be -1.
+* If a solver returned an answer worst than the trivial solver, the score will be 0.
+* In the case that a solver doesn't produce any answer, we assign a score of -1.
 
-### Ranking solvers
-The final ranking will be determined by the average normalized error across all problems tested on.
+### Final solver scores
+The final ranking will be according to solver scores determined by averaging the normalized errors across all problems tested on.
 
   
 ## MAR Task
