@@ -18,11 +18,11 @@ where $$ Z^{*(i)} $$
 is the true partition function value for problem instance \\(i\\) and $$ Z^{(i)}_{solver} $$ is the approximate partition function value as computed by the solver.
 
 ### Normalizing errors
-In order to assign final scores to each solver that consider all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors computed on each problem instance.  In this way, scores can be aggregated in a way such that each problem instance can contribute equally to the final score.  We compute this normalized error in the following way: <br>
+In order to assign final scores to each solver that consider all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors computed on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= max(0, 1 - \frac{Err^{(i)}_{solver}}{MaxErr^{(i)}}).
+  Score^{(i)}_{solver} &= max(\~ 0, \~\~ 100 (1 - \frac{Err^{(i)}_{solver}}{MaxErr^{(i)}}) \~).
 \end{align*}
 $$
 
@@ -33,7 +33,7 @@ is the error that results from the solution produced by a trivial solver on prob
 * If a solver returned an answer worst than the trivial solver, the score will be 0.
 
 ### Final solver scores
-The final ranking will be according to aggregated solver scores determined by averaging the per-instance scores across all problems tested on.
+The final rankings will be according to an aggregation of solver scores computed by averaging the per-instance scores across all problems tested on.
 
   
 ## MAR Task
