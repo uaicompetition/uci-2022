@@ -4,6 +4,8 @@ usemathjax: true
 permalink: /results/evaluation-criteria/
 ---
 
+testing
+
 ## PR Task
 ### Computing PR errors
 For each partition function problem instance tested, we compute solver errors in the following way: <br>
