@@ -46,7 +46,7 @@ For each MAR problem instance tested, we compute a per-instance average Hellinge
 
 $$ 
 \begin{align*}
- \overline{HErr} &= \frac{1}{N} \sum_{i=1}^{N} Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i)),
+ HErr &= \frac{1}{N} \sum_{i=1}^{N} Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i)),
 \end{align*}
 $$
 
@@ -57,11 +57,11 @@ In order to assign final scores to each solver considering all problems tested o
 
 $$ 
 \begin{align*}
-  Score &= max( 0,  100 (1 - \frac{\overline{HErr}}{\overline{MaxHErr}}) ).
+  Score &= max( 0,  100 (1 - \frac{HErr}{MaxHErr}) ).
 \end{align*}
 $$
 
-where $$ \overline{MaxHErr} $$ 
+where $$ MaxHErr $$ 
 is the average Hellinger error of the solution returned by a trivial solver.
 
 * If the evaluated solver returns the true probability distributions for all unobserved variables, its score will be 100.
