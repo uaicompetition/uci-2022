@@ -15,7 +15,7 @@ $$
 $$
 
 where $$ Z^{*} $$ 
-is the true partition function value for the problem instance and $$ Z^{est} $$ is the approximate partition function value as computed by the solver.
+is the true partition function value for the problem instance and $$ \hat{Z} $$ is the approximate partition function value as computed by the solver.
 
 ### Normalizing errors
 In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
@@ -29,7 +29,7 @@ $$
 where $$ MaxErr $$ 
 is the error of the solution returned by a trivial solver.
 
-* If the evaluated solver returns the exact answer, its score will be 100.
+* If the evaluated solver returns the true partition function value, its score will be 100.
 * If the evaluated solver returns an answer worst than the trivial solver, the score will be 0.
 
 ### Final solver scores
@@ -46,11 +46,11 @@ For each MAR problem instance tested, we compute a per-instance average Hellinge
 
 $$ 
 \begin{align*}
- \bar{HErr} &= \frac{1}{N} \sum_{i=1}^{N} Hell({\mathbf{P}}^{*}(V_i),{\mathbf{P}}(V_i)),
+ \bar{HErr} &= \frac{1}{N} \sum_{i=1}^{N} Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i)),
 \end{align*}
 $$
 
-where $$N$$ is the total number of unobserved variables for that problem instance, $$( \mathbf{P}^{*}(V_i) )$$ is the true probability distribution of variable $$i$$, $$( \mathbf{P}^{est}(V_i) )$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{P}}^{est}(V_i))$$ is the Hellinger distance between the two. <br>
+where $$N$$ is the total number of unobserved variables for that problem instance, $$( \mathbf{P}^{*}(V_i) )$$ is the true probability distribution of variable $$i$$, $$( \mathbf{\hat{P}}^{est}(V_i) )$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
 
 ### Normalizing errors
 In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
