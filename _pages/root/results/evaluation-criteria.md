@@ -18,7 +18,7 @@ where $$ Z^{*} $$
 is the true partition function value for the problem instance and $$ \hat{Z} $$ is the approximate partition function value as computed by the solver.
 
 ### Normalizing errors
-In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
+In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors on each problem instance.  This way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
@@ -53,7 +53,7 @@ $$
 where $$N$$ is the total number of unobserved variables for the problem instance, $$\mathbf{P}^{*}(V_i)$$ is the true probability distribution of variable $$i$$, $$\mathbf{\hat{P}}(V_i)$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
 
 ### Normalizing errors
-In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
+In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  This way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
@@ -73,31 +73,36 @@ The final rankings will be according to an aggregation of solver scores computed
   
 ## MAP Task
 
-### Computing log MEP value from MPE files
+### Computing MPE log-likelihoods
 
-For the \\(i^{th}\\) problem, we compute log MPE value. <br>
-
-### Normalizing scores
-We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing log MPE values as follows. <br>
-
+For the MAP task, which asks for the most probable explanation (or MPE) - namely the most likely joint assignment to all unobserved variables, we compute the log-likelihood of a returned joint assignment as: <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= \frac{log(MPE)^{(i)}_{solver} - log(MPE)^{(i)}_{worst}}{log(MPE)^{(i)}_{best} - log(MPE)^{(i)}_{worst}},
+ LL &= log(L(\hat{MPE})),
+\end{align*}
+$$
+
+where $$\hat{MPE}$$ is the best assigment to the unobserved variables found by the solver and $$L(\hat{MPE})$$ is likelihood of that assignment based on the costs associated with the problem network. <br>
+
+### Normalizing scores
+In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned MPE log-likelihoods computed for each problem instance.  This way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
+
+$$ 
+\begin{align*}
+  Score &= max(0, 100(1 - \frac{LL - MinLL}{MaxLL - MinLL})),
 \end{align*}
 $$
 
 where 
-where $$ log(MPE)^{(i)}_{solver} $$  is the log MPE value from the solver,
-$$ log(MPE)^{(i)}_{best} $$ is the best known log MPE value, and
-$$ log(MPE)^{(i)}_{worst} $$ is the worst log MPE value.
+where $$ MaxLL $$  is the MPE log-likelihood of the best solution out of all solvers in the competition to date and 
+$$ MinLL $$ is the MPE log-likelihood associated with the solution by a trivial solver.
 
-* If solver returned the exact or best known answer, the score will be +1.
-* If a solver returned the worst answer, the score will be 0.
-* If a solver didn't return any answer, the score will be -1.
+* If the evaluated solver returns the true probability distributions for all unobserved variables, its score will be 100.
+* If the evaluated solver returns an answer worst than the trivial solver, the score will be 0.
 
 ### Ranking solvers
-The final ranking will be determined by the total score.
+The final rankings will be according to an aggregation of solver scores computed by averaging the per-instance scores across all problems tested on.
 
 
 ## MMAP Task
