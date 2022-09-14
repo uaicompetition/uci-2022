@@ -79,11 +79,11 @@ For the MAP task, which asks for the most probable explanation (or MPE) - namely
 
 $$ 
 \begin{align*}
- LL &= log(L(\hat{MPE})),
+ LL &= log(L(\widehat{MPE})),
 \end{align*}
 $$
 
-where $$\hat{MPE}$$ is the best assigment to the unobserved variables found by the solver and $$L(\hat{MPE})$$ is likelihood of that assignment based on the costs associated with the problem network. <br>
+where $$\widehat{MPE}$$ is the best assigment to the unobserved variables found by the solver and $$L(\widehat{MPE})$$ is likelihood of that assignment based on the costs associated with the problem network. <br>
 
 ### Normalizing scores
 In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned MPE log-likelihoods computed for each problem instance.  This way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
