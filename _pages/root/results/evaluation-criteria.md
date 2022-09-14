@@ -10,7 +10,7 @@ For each partition function problem instance tested, we compute solver errors in
 
 $$ 
 \begin{align*}
-  Err &= | \log \frac{Z^{*}}{Z^{est}} |,
+  Err &= | \log \frac{Z^{*}}{\hat{Z}} |,
 \end{align*}
 $$
 
@@ -22,7 +22,7 @@ In order to assign final scores to each solver considering all problems tested o
 
 $$ 
 \begin{align*}
-  Score &= max(\~ 0, \~\~ 100 (1 - \frac{Err}{MaxErr}) \~).
+  Score &= max( 0,  100 (1 - \frac{Err}{MaxErr}) ).
 \end{align*}
 $$
 
@@ -50,14 +50,14 @@ $$
 \end{align*}
 $$
 
-where $$N$$ is the total number of unobserved variables for that problem instance, $$( \mathbf{P}^{*}(V_i) )$$ is the true probability distribution of variable $$i$$, $$( \mathbf{\hat{P}}^{est}(V_i) )$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
+where $$N$$ is the total number of unobserved variables for the problem instance, $$\mathbf{P}^{*}(V_i)$$ is the true probability distribution of variable $$i$$, $$\mathbf{\hat{P}}(V_i)$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
 
 ### Normalizing errors
 In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
-  Score &= max(\~ 0, \~\~ 100 (1 - \frac{\bar{HErr}}{\bar{MaxHErr}}) \~).
+  Score &= max( 0,  100 (1 - \frac{\bar{HErr}}{\bar{MaxHErr}}) ).
 \end{align*}
 $$
 
