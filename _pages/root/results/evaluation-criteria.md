@@ -6,31 +6,31 @@ permalink: /results/evaluation-criteria/
 
 ## PR Task
 ### Computing PR errors
-For each partition function problem instance \\(i\\) tested, we compute solver errors in the following way: <br>
+For each partition function problem instance tested, we compute solver errors in the following way: <br>
 
 $$ 
 \begin{align*}
-  Err^{(i)}_{solver} &= | \log \frac{Z^{*(i)}}{Z^{(i)}_{solver}} |,
+  Err &= | \log \frac{Z^{*}}{Z^{est}} |,
 \end{align*}
 $$
 
-where $$ Z^{*(i)} $$ 
-is the true partition function value for problem instance \\(i\\) and $$ Z^{(i)}_{solver} $$ is the approximate partition function value as computed by the solver.
+where $$ Z^{*} $$ 
+is the true partition function value for the problem instance and $$ Z^{est} $$ is the approximate partition function value as computed by the solver.
 
 ### Normalizing errors
-In order to assign final scores to each solver that consider all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors computed on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
+In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= max(\~ 0, \~\~ 100 (1 - \frac{Err^{(i)}_{solver}}{MaxErr^{(i)}}) \~).
+  Score &= max(\~ 0, \~\~ 100 (1 - \frac{Err}{MaxErr}) \~).
 \end{align*}
 $$
 
-where $$ MaxErr^{(i)} $$ 
-is the error that results from the solution produced by a trivial solver on problem instance \\(i\\).
+where $$ MaxErr $$ 
+is the error of the solution returned by a trivial solver.
 
-* If solver returned the exact answer, the score will be +1.
-* If a solver returned an answer worst than the trivial solver, the score will be 0.
+* If the evaluated solver returns the exact answer, its score will be 100.
+* If the evaluated solver returns an answer worst than the trivial solver, the score will be 0.
 
 ### Final solver scores
 The final rankings will be according to an aggregation of solver scores computed by averaging the per-instance scores across all problems tested on.
@@ -38,37 +38,37 @@ The final rankings will be according to an aggregation of solver scores computed
   
 ## MAR Task
 
-### Computing Hellinger errors from MAR files
+### Computing Hellinger errors
   
-For the \\(i^{th}\\) problem, the Hellinger error corresponding 
-to a solver \\(solver\\) is computed as follows. <br>
+For the MAR task, which asks for the marginal probability distributions of ***all*** unobserved variables, a method is needed to to account for the nature of the task as producing many distinct distributions of varying accuracy.  For this, we use [Hellinger distance](https://en.wikipedia.org/wiki/Hellinger_distance) as error between approximated and true distributions.
+
+For each MAR problem instance tested, we compute a per-instance average Hellinger error in the following way: <br>
 
 $$ 
 \begin{align*}
- HErr_{solver}^{(i)} &= \frac{1}{N} \sum_{j=1}^{N} Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j)),
+ \bar{HErr} &= \frac{1}{N} \sum_{i=1}^{N} Hell({\mathbf{P}}^{*}(V_i),{\mathbf{P}}(V_i)),
 \end{align*}
 $$
 
-where $$N$$ is the total number of variables, 
-$$Hell({\mathbf{P}}^{*}(V_j),{\mathbf{P}}(V_j))$$ is the Hellinger distance between 
-the true probability distribution corresponding to the $$j^{th}$$ variable $$( \mathbf{P}^{*}(V_j) )$$ and 
-the approximate one returned by the solver is $$({\mathbf{P}}(V_j))$$. <br>
+where $$N$$ is the total number of unobserved variables for that problem instance, $$( \mathbf{P}^{*}(V_i) )$$ is the true probability distribution of variable $$i$$, $$( \mathbf{P}^{est}(V_i) )$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{P}}^{est}(V_i))$$ is the Hellinger distance between the two. <br>
 
-### Normalizing scores
-We compute a score of a solver \\(solver\\) on the \\(i^{th}\\)  by normalizing error as follows. <br>
+### Normalizing errors
+In order to assign final scores to each solver considering all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  In this way, scores can be aggregated such that each problem instance contributes equally to the final score.  We compute this per-instance score in the following way: <br>
 
 $$ 
 \begin{align*}
-  Score^{(i)}_{solver} &= 1 - \frac{HErr^{(i)}_{solver}}{\text{Max HErr}}.
+  Score &= max(\~ 0, \~\~ 100 (1 - \frac{\bar{HErr}}{\bar{MaxHErr}}) \~).
 \end{align*}
 $$
 
-* If solver returned the exact answer, the score will be +1.
-* If a solver returned the worst answer, the score will be 0.
-* If a solver didn't return any answer, the score will be -1.
+where $$ \bar{MaxHErr} $$ 
+is the average Hellinger error of the solution returned by a trivial solver.
+
+* If the evaluated solver returns the true probability distributions for all unobserved variables, its score will be 100.
+* If the evaluated solver returns an answer worst than the trivial solver, the score will be 0.
 
 ### Ranking solvers
-The final ranking will be determined by the total score.
+The final rankings will be according to an aggregation of solver scores computed by averaging the per-instance scores across all problems tested on.
     
   
 ## MAP Task
