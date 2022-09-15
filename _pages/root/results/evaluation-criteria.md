@@ -50,7 +50,7 @@ $$
 \end{align*}
 $$
 
-where $$N$$ is the total number of unobserved variables for the problem instance, $$\mathbf{P}^{*}(V_i)$$ is the true probability distribution of variable $$i$$, $$\mathbf{\hat{P}}(V_i)$$ is the approximated probability distribution of variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
+where $$N$$ is the total number of unobserved variables for the problem instance, $$\mathbf{P}^{*}(V_i)$$ is the true probability distribution of unobserved variable $$i$$, $$\mathbf{\hat{P}}(V_i)$$ is the approximated probability distribution of unobserved variable $$i$$ as computed by the solver, and $$Hell({\mathbf{P}}^{*}(V_i),{\mathbf{\hat{P}}}(V_i))$$ is the Hellinger distance between the two. <br>
 
 ### Normalizing errors
 In order to assign final scores to each solver that equally consider all problems tested on, we first compute a per-instance score by normalizing the afformentioned average Hellinger errors on each problem instance.  We compute this per-instance score in the following way: <br>
