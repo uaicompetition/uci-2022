@@ -29,14 +29,6 @@ The solution format are as follows depending on the task
 -0.2008
 ```
 
-* **Most probable explanation, MPE**: A space separated line that includes:
-    * the number _n_ of model variables, and
-    * the MPE instantiation, a list of value indices for all _n_ variables.  
-    * For example, an input model with 3 binary variables may have a solution line:
-```
-3 0 1 0
-```
-
 * **Marginals, MAR**: A space separated line that includes:
     * The number of variables in the model.
     * A list of marginal approximations of all the variables. For each variable its cardinality is first stated, then the probability of each state is stated. The order of the variables is the same as in the model, all data is space separated.
