@@ -113,4 +113,4 @@ use the same evaluation criteria used for MAP task.
 
 ## MLC Task
 For Evaluating the results produce by different MLC submissions we 
-use the same evaluation criteria used for MAP task.
+use the same evaluation criteria used for MAP task with the exception that, instead of computing scores with respect to the best solution by submitted solvers, we compute scores relative to the optimal solution for each instance. 
