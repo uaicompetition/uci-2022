@@ -9,6 +9,6 @@ permalink: /results/current-leader-board/benchmark-rankings/MLC-overall-rankings
 
 | Solver |   Average Score    |
 | ------ | -----------------: |
-| RF_d-4 | 53.758842389360154 |
 | RF_d-8 | 73.002865709234530 |
+| RF_d-4 | 53.758842389360154 |
 
