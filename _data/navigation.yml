@@ -67,6 +67,8 @@ docs:
     children:
     - title: "Evaluation Criteria"
       url: /results/evaluation-criteria
+    - title: "Current Leader Board"
+      url: /results/current-leader-board
     - title: "Leader Board"
       url: leaderboard
     - title: "Summary"
