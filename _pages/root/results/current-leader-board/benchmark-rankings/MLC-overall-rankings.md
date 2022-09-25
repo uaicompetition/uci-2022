@@ -5,10 +5,17 @@ permalink: /results/current-leader-board/benchmark-rankings/MLC-overall-rankings
 ---
 
 
+### 1min
+
+| Solver | Average |
+| ------ | ------: |
+| RF_d-8 |    73.0 |
+| RF_d-4 |    53.8 |
+
 ### 5min
 
-| Solver |   Average Score    |
-| ------ | -----------------: |
-| RF_d-8 | 73.002865709234530 |
-| RF_d-4 | 53.758842389360154 |
+| Solver | Average |
+| ------ | ------: |
+| RF_d-8 |    73.0 |
+| RF_d-4 |    53.8 |
 
