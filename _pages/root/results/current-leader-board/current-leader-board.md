@@ -26,5 +26,5 @@ permalink: /results/current-leader-board
 [Grids_18_mlc_01_01](benchmark-rankings/MLC-Grids_18_mlc_01_01-rankings.md) \
 [Grids_18_mlc_02_01](benchmark-rankings/MLC-Grids_18_mlc_02_01-rankings.md) \
 [Grids_18_mlc_02_09](benchmark-rankings/MLC-Grids_18_mlc_02_09-rankings.md) \
-[Grids_18_mlc_03_01](benchmark-rankings/MLC-Grids_18_mlc_03_01-rankings.md) \
+[Grids_18_mlc_03_01](benchmark-rankings/MLC-Grids_18_mlc_03_01-rankings.md)
 
