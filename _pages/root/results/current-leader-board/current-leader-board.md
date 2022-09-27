@@ -5,14 +5,14 @@ permalink: /results/current-leader-board
 ---
 
 
-Averasge scores for each solver across all benchmark sets evaluated under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](/_pages/root/results/evaluation-criteria.md).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
+Averasge scores for each solver across all benchmark sets evaluated under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](/uci-2022/_pages/root/results/evaluation-criteria.md).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
 
 # MLC
 
-| Solver | 1min | 5min |
-| ------ | ---: | ---: |
-| RF_d-8 | 73.0 | 73.0 |
-| RF_d-4 | 53.8 | 53.8 |
+|                  Solver                  | 1min | 5min |
+| ---------------------------------------- | ---: | ---: |
+| [RF_d-8](solver-scores/RF_d-8-scores.md) | 73.0 | 73.0 |
+| [RF_d-4](solver-scores/RF_d-4-scores.md) | 53.8 | 53.8 |
 
 #### Benchmark Specific Rankings
 

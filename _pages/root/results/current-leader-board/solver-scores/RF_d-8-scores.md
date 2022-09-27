@@ -5,7 +5,7 @@ permalink: /results/current-leader-board/solver-scores/RF_d-8-scores
 ---
 
 
-Solver scores for individual problem instances for each attempted task under various timelimits per benchmark set used for evauation of the task.  Determination of scores is based on the event [evaluation criteria](/_pages/root/results/evaluation-criteria.md).
+Solver scores for individual problem instances for each attempted task under various timelimits per benchmark set used for evauation of the task.  Determination of scores is based on the event [evaluation criteria](/uci-2022/_pages/root/results/evaluation-criteria.md).
 
 # MLC
 
