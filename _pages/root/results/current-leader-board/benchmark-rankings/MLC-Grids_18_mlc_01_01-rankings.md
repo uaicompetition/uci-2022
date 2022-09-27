@@ -5,7 +5,7 @@ permalink: /results/current-leader-board/benchmark-rankings/MLC-Grids_18_mlc_01_
 ---
 
 
-Averasge scores for each solver for this task and benchmark set under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](../evaluation-criteria.md).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
+Averasge scores for each solver for this task and benchmark set under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](https://uaicompetition.github.io/uci-2022/results/evaluation-criteria/).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
 
 |                  Solver                   | 1min | 5min |
 | ----------------------------------------- | ---: | ---: |
