@@ -5,10 +5,10 @@ permalink: /results/current-leader-board/benchmark-rankings/MLC-Grids_18_mlc_03_
 ---
 
 
-Averasge scores for each solver for this task and benchmark set under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](/uci-2022/_pages/root/results/evaluation-criteria.md).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
+Averasge scores for each solver for this task and benchmark set under various timelimits.  Determination of scores for the individual problem instances within this benchmark (for which averages are computed and reported here) is based on the event [evaluation criteria](../evaluation-criteria.md).  The order of the solvers shown in the table is determined by accumulating average scores across all time limits.
 
-|                                           Solver                                            | 1min | 5min |
-| ------------------------------------------------------------------------------------------- | ---: | ---: |
-| [RF_d-8](/uci-2022/_pages/root/results/current-leader-board/solver-scores/RF_d-8-scores.md) | 72.0 | 72.0 |
-| [RF_d-4](/uci-2022/_pages/root/results/current-leader-board/solver-scores/RF_d-4-scores.md) | 54.8 | 54.8 |
+|                  Solver                   | 1min | 5min |
+| ----------------------------------------- | ---: | ---: |
+| [RF_d-8](/solver-scores/RF_d-8-scores.md) | 72.0 | 72.0 |
+| [RF_d-4](/solver-scores/RF_d-4-scores.md) | 54.8 | 54.8 |
 
