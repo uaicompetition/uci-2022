@@ -1,5 +1,5 @@
 ---
-title: Leader Board
+title: Archived Leader Boards
 layout: collection
 permalink: /leaderboard/
 collection: leaderboard
