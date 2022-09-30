@@ -7,7 +7,7 @@ permalink: /results/current-leader-board
 
 
 The results below are organized as follows:
-- each table displays the cumulative results for each task under different time limits
+- each table displays the cumulative results for the given task under different time limits
 - scores are average normalized scores across all evaluated problems as outlined in [Evaluation Criteria](https://uaicompetition.github.io/uci-2022/results/evaluation-criteria/)
 - clicking on a solver name links to its results on individual problem instances
 
