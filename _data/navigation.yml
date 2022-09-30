@@ -69,7 +69,7 @@ docs:
       url: /results/evaluation-criteria
     - title: "Current Leader Board"
       url: /results/current-leader-board
-    - title: "Leader Board"
+    - title: "Archived Leader Boards"
       url: leaderboard
     - title: "Summary"
       url: summary
