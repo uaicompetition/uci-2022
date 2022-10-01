@@ -43,12 +43,12 @@ docs:
       url: /file-formats/evidence-format
     - title: "Query Format (MMAP)"
       url: /file-formats/query-format
-    - title: "Result Format"
-      url: /file-formats/result-format
     - title: "Data Format (MLC)"
       url: /file-formats/data-format
     - title: "Test Format (MLC)"
       url: /file-formats/test-format
+    - title: "Result Format"
+      url: /file-formats/result-format
 
   - title: "Competition Entry"
     url: /competition-entry
