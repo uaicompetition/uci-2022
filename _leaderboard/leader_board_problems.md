@@ -1,5 +1,5 @@
 ---
-title: "Tuning Phase Leaderboard Problem Set"
+title: "Tuning Phase Leaderboard Problem Sets"
 ---
 
 ## Problem files
