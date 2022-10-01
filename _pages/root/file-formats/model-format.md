@@ -3,6 +3,7 @@ title: "File Formats"
 permalink: /file-formats/model-format/
 ---
 
+<br>
 ## Model Format
 We use a simple text-file format specified below to describe the graphical model neworks (Markov networks) for problem instances. 
 The format is a generalization of the Ergo file format initially developed by Noetic systems Ergo software.
