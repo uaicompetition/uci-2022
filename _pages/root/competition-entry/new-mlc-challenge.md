@@ -27,7 +27,7 @@ For the offline training phase, you will be provided with the following:
             * this value correpsponds to the log10 likelihood of the joint evidence-query assignment marginalizing over the hidden variables
 
 During the training phase, you can use your own computational resources to compile each Markov
-network and data to a relevant representation such that the prediction to the query variables given evidence
+network and provided data to a relevant representation such that the prediction to the query variables given evidence
 can be provided efficiently and maximizes the marginal likelihood as described above. 
 Example representations include but are not limited to neural networks, graph neural networks,
 auto-regressive models, junction trees, arithmetic circuits, AND/OR graphs, sum-product networks,
