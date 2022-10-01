@@ -3,12 +3,13 @@ title: "File Formats"
 permalink: /file-formats/model-format/
 ---
 
-# Model Format
+## Model Format
 We use a simple text-file format specified below to describe the graphical model neworks (Markov networks) for problem instances. 
 The format is a generalization of the Ergo file format initially developed by Noetic systems Ergo software.
 We use the suffix **.uai** to denote the model files.
 
-## Structure
+Structure
+---------
 A file in the UAI format consists of the following two parts, in order:
 ```
 <Preamble>
@@ -16,7 +17,8 @@ A file in the UAI format consists of the following two parts, in order:
 ```
 which are described below.
 
-## Preamble
+Preamble
+--------
 The preamble consists of the following portions, in order:
 ```
 <Graph Type>
@@ -82,7 +84,8 @@ MARKOV
 In the example above, the first line denotes a Markov network, the second line tells us the problem consists of three variables, let's refer to them as X, Y, and Z (which will implicitly have indexes 0, 1, and 2, respectively). The third line tells us that X, Y, and Z's cardinalities are 2, 2, and 3 respectively. Line four specifies that there are 3 functions. Based on the final three lines, we know that the first function is a unary function on X, the second function is defined over X and Y, while the second is defined over Y and Z.
 
 
-## Function Tables
+Function Tables
+---------------
 Under the preamble, 
 each function is specified - one-by-one, separated by a blank line, in the order introduced in the preamble - by giving its full table.  Each function table is presented as follows:
 ```
@@ -150,7 +153,8 @@ The associated function tables can look as follows:
 (Note that line breaks and empty lines act as a whitespace, exactly like plain spaces “ ”. 
 They are used here to improve readability).
 
-## Summary
+Summary
+-------
 In summary, a problem file consists of two sections (with associated subsections): 
 1. Preamble
     * Graph Type
