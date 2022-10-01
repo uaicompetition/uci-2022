@@ -20,7 +20,7 @@ For the offline training phase, you will be provided with the following:
         * observed or evidence variables \\(E\\)
         * query variables \\(Q\\) 
         * hidden variables \\(H\\)
-    * 10000 data lines, each containing:
+    * 10,000 data lines, each containing:
         * an evidence assignment (ie. observation)
         * a corresponding query assignment
         * a value measuring the goodness of the query assignment given the evidence (ie. observation)
