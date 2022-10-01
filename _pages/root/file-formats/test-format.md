@@ -5,7 +5,7 @@ permalink: /file-formats/test-format/
 
 ## Test File Format (for MLC task only)
 When testing solvers, solvers will be passed a [model file](../model-format.md) corresponding to the network model currently being evaluated 
-as well as a test file (that has the same name as the original network file but with an added **.data** suffix, 
+as well as a test file (that has the same name as the original network file but with an added **.test** suffix, 
 for instance, a model file _problem.uai_ will have associated test file _problem.uai.test_).  The test file contains a series of evidence assignments 
 for which solvers are to make predictions with respect to.  Here we describe this test file format.
 .
