@@ -72,7 +72,7 @@ docs:
     - title: "Archived Leader Boards"
       url: leaderboard
     - title: Tuning Benchmarks
-      url: leaderboard/leader_board_problems
+      url: /results/tuning-benchmarks
     - title: "Summary"
       url: summary
 #https://personal.utdallas.edu/~vibhav.gogate/uai14-competition/leaders.html
