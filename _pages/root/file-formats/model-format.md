@@ -18,8 +18,7 @@ A file in the UAI format consists of the following two parts, in order:
 ```
 which are described below.
 
-Preamble
---------
+### Preamble
 The preamble consists of the following portions, in order:
 ```
 <Graph Type>
@@ -28,15 +27,16 @@ The preamble consists of the following portions, in order:
 ```
 which we now describe...
 
-### Graph Type
+<br>
+***Graph Type***
 
 The Graph Type is a metalabel signifying the type of network being encoded.  Generally, this can be either BAYES for a Bayesian network or MARKOV for a Markov network. For our competition, the label will always be:
 ```
 MARKOV
 ```
 
-
-### Variables and Domains
+<br>
+***Variables and Domains***
 
 This portion of the preamble contains two lines.
 
@@ -52,7 +52,8 @@ and the last variable having a domain size of 3, would look like:
 2 2 3
 ```
 
-### Function Scopes
+<br>
+***Function Scopes***
 
 The last section of the preamble states the number of functions in the network as well as their respective scopes.
 
@@ -71,7 +72,7 @@ For a network containing three functions, the first of which is a unary factor o
 ```
 (Note: The order of the list of varaibles in a function's scope is not restricted. When defining the function values, the ordering of variables within a factor will follow the order provided here).
 
-### Preamble Summary
+***Preamble Summary***
 The preamble for our simple Markov network with three variables and two functions described above would look like:
 ```
 MARKOV
@@ -85,8 +86,8 @@ MARKOV
 In the example above, the first line denotes a Markov network, the second line tells us the problem consists of three variables, let's refer to them as X, Y, and Z (which will implicitly have indexes 0, 1, and 2, respectively). The third line tells us that X, Y, and Z's cardinalities are 2, 2, and 3 respectively. Line four specifies that there are 3 functions. Based on the final three lines, we know that the first function is a unary function on X, the second function is defined over X and Y, while the second is defined over Y and Z.
 
 
-Function Tables
----------------
+### Function Tables
+
 Under the preamble, 
 each function is specified - one-by-one, separated by a blank line, in the order introduced in the preamble - by giving its full table.  Each function table is presented as follows:
 ```
