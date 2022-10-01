@@ -23,7 +23,7 @@ For the offline training phase, you will be provided with the following:
     * 10,000 data lines, each containing:
         * an evidence assignment (ie. observation)
         * a corresponding query assignment
-        * a value measuring the goodness of the query assignment given the evidence (ie. observation)
+        * a value measuring the goodness of the query assignment given the evidence
             * this value correpsponds to the log10 likelihood of the joint evidence-query assignment marginalizing over the hidden variables
 
 During the training phase, you can use your own computational resources to compile each Markov
