@@ -73,6 +73,7 @@ For a network containing three functions, the first of which is a unary factor o
 (Note: The order of the list of varaibles in a function's scope is not restricted. When defining the function values, the ordering of variables within a factor will follow the order provided here).
 
 ***Preamble Summary***
+
 The preamble for our simple Markov network with three variables and two functions described above would look like:
 ```
 MARKOV
