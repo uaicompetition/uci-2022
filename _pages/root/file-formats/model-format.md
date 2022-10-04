@@ -41,9 +41,9 @@ MARKOV
 This portion of the preamble contains two lines.
 
 The first line consists of a single number, N, specifying the number of variables in the network.
-Each variable is implicitly labled as 0, 1, ... , N.
+Each variable is implicitly labled as 0, 1, ... , N-1.
 
-The second line specifies the cardinalities (or domain size) of each variable separated by a whitespace (in order from 0, 1, ... , N).
+The second line specifies the cardinalities (or domain size) of each variable separated by a whitespace (in order from 0, 1, ... , N-1).
 
 An example of a network with three variables, the first two having a domain size of 2
 and the last variable having a domain size of 3, would look like:
@@ -114,13 +114,13 @@ The next line contains the function values for the six different assignments pos
 
 To illustrate this more comprehensively, we continue with our Markov network example from the preamble description assuming the following conditional probability tables for the functions outlined in our preamble (in order):
 
-| X | P(X) |
+| X | f(X) |
 | :--- | :----: | 
 | 0 | 0.436 |
 | 1 | 0.564 |
 
 
-| X |	Y |	P(Y,X) |
+| X |	Y |	f(Y,X) |
 | :--- | :--- | :----: | 
 | 0 |	0 |	0.128  |
 | 0 |	1 |	0.872 |
@@ -128,7 +128,7 @@ To illustrate this more comprehensively, we continue with our Markov network exa
 | 1 |	1 |	0.080 |
 
 
-| Y | 	Z | 	P(Z,Y) | 
+| Y | 	Z | 	f(Z,Y) | 
 | :--- | :--- | :----: | 
 | 0 | 	0 | 	0.210 | 
 | 0 | 	1 | 	0.333 | 
