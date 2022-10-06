@@ -45,12 +45,11 @@ The solution format are as follows depending on the task
 3 2 0 3 1 4 0
 ```
 
-* **Multi label classfication, MLC**: This format is the same as MMAP result format described above. A space separated line that includes:
+* **Multi label classfication, MLC**: This format is similar as MMAP result format described above with the exception that multiple outputs appear in a single file. Each line is a prediction result on the query variables formatted as a space separated line that includes:
     * The number _q_ of (possibly non-binary) properties or query variables
     * the predicted label for each query variable, a list of variable value pairs for all _q_ variables.
-    * For example, if the predicted values/labels are 2, 1 and 3 for three query variables indexed by 4 8 and 9 respectively, the solution will look as follows
+    * For example, suppose that we have three query variables Q={2, 4, 7} and based on two different evidence inputs two predictions are made to the assignments to the query variables: q1={0, 2, 0} and q2={2, 0, 1}.
 ```
-3 4 2 8 1 9 3
+3 2 0 4 2 7 0
+3 2 2 4 0 7 1
 ```
-
-*Note*: If a solver does not produce a solution by the given time, it would be considered as having failed on the instance.
