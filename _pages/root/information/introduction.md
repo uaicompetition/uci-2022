@@ -18,7 +18,7 @@ Rina Dechter (University of California, Irvine)<br/>
 Alexander Ihler (University of California, Irvine)<br/>
 Vibhav Gogate (University of Texas, Dallas)<br/>
 Junkyu Lee (IBM Research)<br/>
-<br/>
+
 [Evaluation Team](./evaluation-team.md)<br/>
-<br/>
+
 Contact: `uaicompetition at gmail dot com`
