@@ -19,6 +19,6 @@ Alexander Ihler (University of California, Irvine)<br/>
 Vibhav Gogate (University of Texas, Dallas)<br/>
 Junkyu Lee (IBM Research)<br/>
 
-[Evaluation Team](./evaluation-team.md)<br/>
+[Evaluation Team](./_pages/root/information/evaluation-team.md)<br/>
 
 Contact: `uaicompetition at gmail dot com`
