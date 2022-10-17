@@ -3,7 +3,7 @@ title: "Evaluation Team"
 permalink: /information/evaluation-team
 ---
 
-Junkyu Lee (IBM Research)
+Junkyu Lee (IBM Research)<br/>
 Bobak Pezeshki (University of California, Irvine)<br/>
 Annie Raichev (University of California, Irvine)<br/>
 Nick Cohen (University of California, Irvine)<br/>
