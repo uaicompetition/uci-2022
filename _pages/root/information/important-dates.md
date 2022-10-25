@@ -17,6 +17,7 @@ For the details, please contact organizers by `uaicompetition at gmail dot com`
   * Tuning phase commences
 * November 2022
   * Solver submissions close
+* December 2022
   * Final results reported
 
 
