@@ -44,3 +44,9 @@ integral part of the scores recieved as alluded to below.
 ## Online Prediction Phase
 
 During the Prediction (or evaluation) phase, for each time limit being evaluated we will run your solver \\(k\\) times, where \\(k\\) is the number of Markov network models provided.  During each run, we will pass as input (1) the [model file](../file-formats/model-format.md) to your solver, (2) a [test file](../file-formats/test-format.md) that will provide a series of evidence assignments (ie. observations), and (3) a path to the expected result file. For each observation in the test file, your program should output the most-probable assignment to all of the query variables for as many of the given evidence assignments as possible *in the order they appear in the test file* and store the results in the [result file](../file-formats/result-format.md).
+
+
+## Example Project
+
+Here we provide an example project demonstrating how to read in the relevant MLC files, parse the data, train a model, and provide an example of how the model will be scored.
+* **[Example MLC Project](https://colab.research.google.com/drive/1s1tAkuuiw1qTGi_fNWwyA9RPP3DmaKXK?usp=sharing#scrollTo=HL6hckTCU9Y3)**
