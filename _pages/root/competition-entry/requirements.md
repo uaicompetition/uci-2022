@@ -32,7 +32,8 @@ We encourage teams to each limit their own solvers' time and memory usage to pre
 * `TIMESEC` is the time limit in seconds.
 * `MEMKB` is the memory limit in KB.
     * we will be passing a MEMKB value of 8000000
-**Important Note: after time or memory limits are exceded, the program will be forceably terminated which can result in premature outputs that result in invalid results**
+
+***Important Note:*** after time or memory limits are exceded, the program will be forceably terminated which can result in premature outputs that result in invalid results
 
 #### Environment Variables for reading/writing 
 We will use **environment variables** to pass the path of the input and output files and
