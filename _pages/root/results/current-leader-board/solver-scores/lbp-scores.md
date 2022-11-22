@@ -1,6 +1,6 @@
 ---
 title: "lbp Scores"
-date: 2022-11-08
+date: 2022-11-22
 permalink: /results/current-leader-board/solver-scores/lbp-scores
 ---
 
@@ -15,141 +15,141 @@ The results below are organized as follows:
 
 ## overall
 
-|      Problem       | 20sec | 1200sec | 3600sec |
-| ------------------ | ----: | ------: | ------: |
-| Alchemy_11         |   0.0 |    96.7 |    96.7 |
-| CSP_11             |   0.0 |    86.3 |    86.3 |
-| CSP_12             |  86.2 |    86.2 |    86.2 |
-| CSP_13             |   0.0 |    86.5 |    86.5 |
-| DBN_11             |   0.0 |    99.9 |    99.9 |
-| DBN_12             |   0.0 |   100.0 |   100.0 |
-| DBN_13             |   0.0 |    99.6 |    99.6 |
-| DBN_14             |   0.0 |   100.0 |   100.0 |
-| DBN_15             |   0.0 |    80.3 |    80.3 |
-| DBN_16             |   0.0 |    99.9 |    99.9 |
-| Grids_11           |  65.2 |    65.2 |    65.2 |
-| Grids_12           |  49.8 |    49.8 |    49.8 |
-| Grids_13           |  64.7 |    64.7 |    64.7 |
-| Grids_14           |  81.4 |    81.4 |    81.4 |
-| Grids_15           |   0.0 |    95.5 |    95.5 |
-| Grids_16           |   0.0 |    66.4 |    66.4 |
-| Grids_17           |   0.0 |    50.1 |    50.1 |
-| Grids_18           |   0.0 |    74.5 |    74.5 |
-| ObjectDetection_11 |   0.0 |    94.8 |    94.8 |
-| ObjectDetection_12 |   0.0 |    92.1 |    92.1 |
-| ObjectDetection_13 |   0.0 |    93.1 |    93.1 |
-| ObjectDetection_14 |   0.0 |    90.9 |    90.9 |
-| ObjectDetection_15 |   0.0 |    94.6 |    94.6 |
-| ObjectDetection_16 |   0.0 |    93.8 |    93.8 |
-| ObjectDetection_17 |   0.0 |    93.7 |    93.7 |
-| ObjectDetection_18 |   0.0 |    85.6 |    85.6 |
-| ObjectDetection_19 |   0.0 |    61.6 |    61.6 |
-| ObjectDetection_20 |   0.0 |    71.8 |    71.8 |
-| ObjectDetection_21 |   0.0 |    89.1 |    89.1 |
-| ObjectDetection_22 |   0.0 |    91.3 |    91.3 |
-| ObjectDetection_23 |   0.0 |    92.0 |    92.0 |
-| ObjectDetection_24 |   0.0 |    92.3 |    92.3 |
-| ObjectDetection_25 |   0.0 |    96.0 |    96.0 |
-| ObjectDetection_26 |   0.0 |    92.1 |    92.1 |
-| ObjectDetection_27 |   0.0 |    93.8 |    93.8 |
-| ObjectDetection_28 |   0.0 |    98.3 |    98.3 |
-| ObjectDetection_29 |   0.0 |    95.6 |    95.6 |
-| ObjectDetection_30 |   0.0 |    88.0 |    88.0 |
-| ObjectDetection_31 |   0.0 |    92.5 |    92.5 |
-| ObjectDetection_32 |   0.0 |    88.7 |    88.7 |
-| ObjectDetection_33 |   0.0 |    89.2 |    89.2 |
-| ObjectDetection_34 |   0.0 |    98.0 |    98.0 |
-| ObjectDetection_35 |   0.0 |    97.2 |    97.2 |
-| ObjectDetection_36 |   0.0 |    97.3 |    97.3 |
-| ObjectDetection_37 |   0.0 |    96.1 |    96.1 |
-| ObjectDetection_38 |   0.0 |    96.3 |    96.3 |
-| ObjectDetection_39 |   0.0 |    95.1 |    95.1 |
-| ObjectDetection_40 |   0.0 |    95.2 |    95.2 |
-| ObjectDetection_41 |   0.0 |     0.0 |     0.0 |
-| ObjectDetection_42 |   0.0 |    97.3 |    97.3 |
-| ObjectDetection_43 |   0.0 |    95.7 |    95.7 |
-| ObjectDetection_44 |   0.0 |    94.7 |    94.7 |
-| ObjectDetection_45 |   0.0 |    94.6 |    94.6 |
-| ObjectDetection_46 |   0.0 |     0.0 |     0.0 |
-| ObjectDetection_47 |   0.0 |     0.0 |     0.0 |
-| ObjectDetection_48 |   0.0 |     0.0 |     0.0 |
-| ObjectDetection_49 |   0.0 |     0.0 |     0.0 |
-| ObjectDetection_50 |   0.0 |    32.2 |    32.2 |
-| ObjectDetection_51 |   0.0 |    97.6 |    97.6 |
-| ObjectDetection_52 |   0.0 |    97.4 |    97.4 |
-| ObjectDetection_53 |   0.0 |    97.5 |    97.5 |
-| ObjectDetection_54 |   0.0 |    98.2 |    98.2 |
-| ObjectDetection_55 |   0.0 |    98.2 |    98.2 |
-| ObjectDetection_56 |   0.0 |    97.9 |    97.9 |
-| ObjectDetection_57 |   0.0 |    97.8 |    97.8 |
-| ObjectDetection_58 |   0.0 |    95.4 |    95.4 |
-| ObjectDetection_59 |   0.0 |    93.6 |    93.6 |
-| ObjectDetection_60 |   0.0 |    92.9 |    92.9 |
-| ObjectDetection_61 |   0.0 |    98.4 |    98.4 |
-| ObjectDetection_62 |   0.0 |    98.7 |    98.7 |
-| ObjectDetection_63 |   0.0 |    98.2 |    98.2 |
-| ObjectDetection_64 |   0.0 |    98.4 |    98.4 |
-| ObjectDetection_65 |   0.0 |    98.1 |    98.1 |
-| ObjectDetection_66 |   0.0 |    95.9 |    95.9 |
-| ObjectDetection_67 |   0.0 |    95.3 |    95.3 |
-| ObjectDetection_68 |   0.0 |    95.6 |    95.6 |
-| ObjectDetection_69 |   0.0 |    95.3 |    95.3 |
-| ObjectDetection_70 |  96.6 |    96.6 |    96.6 |
-| ObjectDetection_71 |   0.0 |    97.3 |    97.3 |
-| ObjectDetection_72 |   0.0 |    93.0 |    93.0 |
-| ObjectDetection_73 |   0.0 |    93.1 |    93.1 |
-| ObjectDetection_74 |   0.0 |    98.7 |    98.7 |
-| ObjectDetection_75 |   0.0 |    98.5 |    98.5 |
-| Pedigree_11        |   0.0 |    96.0 |    96.0 |
-| Pedigree_12        |   0.0 |    96.4 |    96.4 |
-| Pedigree_13        |   0.0 |    92.5 |    92.5 |
-| Promedus_11        |   0.0 |    96.0 |    96.0 |
-| Promedus_12        |   0.0 |    93.6 |    93.6 |
-| Promedus_13        |   0.0 |    97.4 |    97.4 |
-| Promedus_14        |  96.6 |    96.6 |    96.6 |
-| Promedus_15        |  91.4 |    91.4 |    91.4 |
-| Promedus_16        |   0.0 |    99.3 |    99.3 |
-| Promedus_17        |   0.0 |    99.6 |    99.6 |
-| Promedus_18        |   0.0 |    99.9 |    99.9 |
-| Promedus_19        |   0.0 |   100.0 |   100.0 |
-| Promedus_20        |   0.0 |    94.1 |    94.1 |
-| Promedus_21        |   0.0 |    88.9 |    88.9 |
-| Promedus_22        |  93.1 |    93.1 |    93.1 |
-| Promedus_23        |   0.0 |    94.9 |    94.9 |
-| Promedus_24        |   0.0 |    99.8 |    99.8 |
-| Promedus_25        |   0.0 |    98.4 |    98.4 |
-| Promedus_26        |   0.0 |    98.8 |    98.8 |
-| Promedus_27        |  91.4 |    91.4 |    91.4 |
-| Promedus_28        |   0.0 |    95.0 |    95.0 |
-| Promedus_29        |  99.2 |    99.2 |    99.2 |
-| Promedus_30        |  95.3 |    95.3 |    95.3 |
-| Promedus_31        |   0.0 |    89.3 |    89.3 |
-| Promedus_32        |   0.0 |    95.4 |    95.4 |
-| Promedus_33        |   0.0 |    99.9 |    99.9 |
-| Promedus_34        |   0.0 |    90.2 |    90.2 |
-| Promedus_35        |  88.6 |    88.6 |    88.6 |
-| Promedus_36        |   0.0 |    88.6 |    88.6 |
-| Promedus_37        |   0.0 |    96.4 |    96.4 |
-| Promedus_38        |   0.0 |    95.5 |    95.5 |
-| Segmentation_11    |   0.0 |    88.4 |    88.4 |
-| Segmentation_12    |   0.0 |   100.0 |   100.0 |
-| Segmentation_13    |   0.0 |    94.5 |    94.5 |
-| Segmentation_14    |   0.0 |    99.1 |    99.1 |
-| Segmentation_15    |   0.0 |    49.7 |    49.7 |
-| Segmentation_16    |   0.0 |    98.3 |    98.3 |
-| grid10x10.f10      |  49.8 |    49.8 |    49.8 |
-| linkage_12         |   0.0 |    97.4 |    97.4 |
-| linkage_13         |   0.0 |    97.9 |    97.9 |
-| linkage_14         |   0.0 |    92.6 |    92.6 |
-| linkage_16         |   0.0 |    82.2 |    82.2 |
-| linkage_18         |   0.0 |    95.5 |    95.5 |
-| linkage_19         |   0.0 |    94.1 |    94.1 |
-| linkage_21         |   0.0 |    93.8 |    93.8 |
-| linkage_22         |   0.0 |    93.7 |    93.7 |
-| linkage_23         |   0.0 |    85.2 |    85.2 |
-| linkage_24         |   0.0 |    95.0 |    95.0 |
-| linkage_26         |   0.0 |    95.3 |    95.3 |
-| linkage_27         |   0.0 |    90.5 |    90.5 |
+|      Problem       |    20sec     |    1200sec    |    3600sec    |
+| ------------------ | ------------ | ------------- | ------------- |
+| Alchemy_11         | 0.0 (nan)    | 96.7 (606.3)  | 96.7 (606.3)  |
+| CSP_11             | 0.0 (nan)    | 86.3 (14.7)   | 86.3 (14.7)   |
+| CSP_12             | 86.2 (17.3)  | 86.2 (17.3)   | 86.2 (17.3)   |
+| CSP_13             | 0.0 (nan)    | 86.5 (17.0)   | 86.5 (17.0)   |
+| DBN_11             | 0.0 (nan)    | 99.9 (58.5)   | 99.9 (58.5)   |
+| DBN_12             | 0.0 (nan)    | 100.0 (63.1)  | 100.0 (63.1)  |
+| DBN_13             | 0.0 (nan)    | 99.6 (66.1)   | 99.6 (66.1)   |
+| DBN_14             | 0.0 (nan)    | 100.0 (151.2) | 100.0 (151.2) |
+| DBN_15             | 0.0 (nan)    | 80.3 (150.7)  | 80.3 (150.7)  |
+| DBN_16             | 0.0 (nan)    | 99.9 (166.1)  | 99.9 (166.1)  |
+| Grids_11           | 65.2 (184.9) | 65.2 (184.9)  | 65.2 (184.9)  |
+| Grids_12           | 49.8 (349.7) | 49.8 (349.7)  | 49.8 (349.7)  |
+| Grids_13           | 64.7 (364.2) | 64.7 (364.2)  | 64.7 (364.2)  |
+| Grids_14           | 81.4 (522.2) | 81.4 (522.2)  | 81.4 (522.2)  |
+| Grids_15           | 0.0 (nan)    | 95.5 (294.7)  | 95.5 (294.7)  |
+| Grids_16           | 0.0 (nan)    | 66.4 (719.3)  | 66.4 (719.3)  |
+| Grids_17           | 0.0 (nan)    | 50.1 (1471.1) | 50.1 (1471.1) |
+| Grids_18           | 0.0 (nan)    | 74.5 (2084.4) | 74.5 (2084.4) |
+| ObjectDetection_11 | 0.0 (nan)    | 94.8 (-75.0)  | 94.8 (-75.0)  |
+| ObjectDetection_12 | 0.0 (nan)    | 92.1 (-67.6)  | 92.1 (-67.6)  |
+| ObjectDetection_13 | 0.0 (nan)    | 93.1 (-70.6)  | 93.1 (-70.6)  |
+| ObjectDetection_14 | 0.0 (nan)    | 90.9 (-64.3)  | 90.9 (-64.3)  |
+| ObjectDetection_15 | 0.0 (nan)    | 94.6 (-51.9)  | 94.6 (-51.9)  |
+| ObjectDetection_16 | 0.0 (nan)    | 93.8 (-34.5)  | 93.8 (-34.5)  |
+| ObjectDetection_17 | 0.0 (nan)    | 93.7 (-29.9)  | 93.7 (-29.9)  |
+| ObjectDetection_18 | 0.0 (nan)    | 85.6 (-37.3)  | 85.6 (-37.3)  |
+| ObjectDetection_19 | 0.0 (nan)    | 61.6 (-39.2)  | 61.6 (-39.2)  |
+| ObjectDetection_20 | 0.0 (nan)    | 71.8 (-35.5)  | 71.8 (-35.5)  |
+| ObjectDetection_21 | 0.0 (nan)    | 89.1 (-24.5)  | 89.1 (-24.5)  |
+| ObjectDetection_22 | 0.0 (nan)    | 91.3 (-36.8)  | 91.3 (-36.8)  |
+| ObjectDetection_23 | 0.0 (nan)    | 92.0 (-31.7)  | 92.0 (-31.7)  |
+| ObjectDetection_24 | 0.0 (nan)    | 92.3 (-26.5)  | 92.3 (-26.5)  |
+| ObjectDetection_25 | 0.0 (nan)    | 96.0 (-18.7)  | 96.0 (-18.7)  |
+| ObjectDetection_26 | 0.0 (nan)    | 92.1 (-33.8)  | 92.1 (-33.8)  |
+| ObjectDetection_27 | 0.0 (nan)    | 93.8 (-29.9)  | 93.8 (-29.9)  |
+| ObjectDetection_28 | 0.0 (nan)    | 98.3 (-46.8)  | 98.3 (-46.8)  |
+| ObjectDetection_29 | 0.0 (nan)    | 95.6 (-50.9)  | 95.6 (-50.9)  |
+| ObjectDetection_30 | 0.0 (nan)    | 88.0 (-52.6)  | 88.0 (-52.6)  |
+| ObjectDetection_31 | 0.0 (nan)    | 92.5 (-44.2)  | 92.5 (-44.2)  |
+| ObjectDetection_32 | 0.0 (nan)    | 88.7 (-46.8)  | 88.7 (-46.8)  |
+| ObjectDetection_33 | 0.0 (nan)    | 89.2 (-44.2)  | 89.2 (-44.2)  |
+| ObjectDetection_34 | 0.0 (nan)    | 98.0 (-35.4)  | 98.0 (-35.4)  |
+| ObjectDetection_35 | 0.0 (nan)    | 97.2 (-37.6)  | 97.2 (-37.6)  |
+| ObjectDetection_36 | 0.0 (nan)    | 97.3 (-30.7)  | 97.3 (-30.7)  |
+| ObjectDetection_37 | 0.0 (nan)    | 96.1 (-30.0)  | 96.1 (-30.0)  |
+| ObjectDetection_38 | 0.0 (nan)    | 96.3 (-75.1)  | 96.3 (-75.1)  |
+| ObjectDetection_39 | 0.0 (nan)    | 95.1 (-70.3)  | 95.1 (-70.3)  |
+| ObjectDetection_40 | 0.0 (nan)    | 95.2 (-72.4)  | 95.2 (-72.4)  |
+| ObjectDetection_41 | 0.0 (nan)    | 0.0 (-73.7)   | 0.0 (-73.7)   |
+| ObjectDetection_42 | 0.0 (nan)    | 97.3 (-45.2)  | 97.3 (-45.2)  |
+| ObjectDetection_43 | 0.0 (nan)    | 95.7 (-39.5)  | 95.7 (-39.5)  |
+| ObjectDetection_44 | 0.0 (nan)    | 94.7 (-41.1)  | 94.7 (-41.1)  |
+| ObjectDetection_45 | 0.0 (nan)    | 94.6 (-39.0)  | 94.6 (-39.0)  |
+| ObjectDetection_46 | 0.0 (nan)    | 0.0 (-43.0)   | 0.0 (-43.0)   |
+| ObjectDetection_47 | 0.0 (nan)    | 0.0 (-45.8)   | 0.0 (-45.8)   |
+| ObjectDetection_48 | 0.0 (nan)    | 0.0 (-38.0)   | 0.0 (-38.0)   |
+| ObjectDetection_49 | 0.0 (nan)    | 0.0 (-40.1)   | 0.0 (-40.1)   |
+| ObjectDetection_50 | 0.0 (nan)    | 32.2 (-37.1)  | 32.2 (-37.1)  |
+| ObjectDetection_51 | 0.0 (nan)    | 97.6 (-53.4)  | 97.6 (-53.4)  |
+| ObjectDetection_52 | 0.0 (nan)    | 97.4 (-57.0)  | 97.4 (-57.0)  |
+| ObjectDetection_53 | 0.0 (nan)    | 97.5 (-47.8)  | 97.5 (-47.8)  |
+| ObjectDetection_54 | 0.0 (nan)    | 98.2 (-41.5)  | 98.2 (-41.5)  |
+| ObjectDetection_55 | 0.0 (nan)    | 98.2 (-34.1)  | 98.2 (-34.1)  |
+| ObjectDetection_56 | 0.0 (nan)    | 97.9 (-36.3)  | 97.9 (-36.3)  |
+| ObjectDetection_57 | 0.0 (nan)    | 97.8 (-33.4)  | 97.8 (-33.4)  |
+| ObjectDetection_58 | 0.0 (nan)    | 95.4 (-41.7)  | 95.4 (-41.7)  |
+| ObjectDetection_59 | 0.0 (nan)    | 93.6 (-35.9)  | 93.6 (-35.9)  |
+| ObjectDetection_60 | 0.0 (nan)    | 92.9 (-35.3)  | 92.9 (-35.3)  |
+| ObjectDetection_61 | 0.0 (nan)    | 98.4 (-23.2)  | 98.4 (-23.2)  |
+| ObjectDetection_62 | 0.0 (nan)    | 98.7 (-24.8)  | 98.7 (-24.8)  |
+| ObjectDetection_63 | 0.0 (nan)    | 98.2 (-19.9)  | 98.2 (-19.9)  |
+| ObjectDetection_64 | 0.0 (nan)    | 98.4 (-21.3)  | 98.4 (-21.3)  |
+| ObjectDetection_65 | 0.0 (nan)    | 98.1 (-19.7)  | 98.1 (-19.7)  |
+| ObjectDetection_66 | 0.0 (nan)    | 95.9 (-47.1)  | 95.9 (-47.1)  |
+| ObjectDetection_67 | 0.0 (nan)    | 95.3 (-40.7)  | 95.3 (-40.7)  |
+| ObjectDetection_68 | 0.0 (nan)    | 95.6 (-42.7)  | 95.6 (-42.7)  |
+| ObjectDetection_69 | 0.0 (nan)    | 95.3 (-40.3)  | 95.3 (-40.3)  |
+| ObjectDetection_70 | 96.6 (-31.3) | 96.6 (-31.3)  | 96.6 (-31.3)  |
+| ObjectDetection_71 | 0.0 (nan)    | 97.3 (-33.7)  | 97.3 (-33.7)  |
+| ObjectDetection_72 | 0.0 (nan)    | 93.0 (-26.5)  | 93.0 (-26.5)  |
+| ObjectDetection_73 | 0.0 (nan)    | 93.1 (-25.7)  | 93.1 (-25.7)  |
+| ObjectDetection_74 | 0.0 (nan)    | 98.7 (-31.8)  | 98.7 (-31.8)  |
+| ObjectDetection_75 | 0.0 (nan)    | 98.5 (-33.8)  | 98.5 (-33.8)  |
+| Pedigree_11        | 0.0 (nan)    | 96.0 (-18.2)  | 96.0 (-18.2)  |
+| Pedigree_12        | 0.0 (nan)    | 96.4 (-12.1)  | 96.4 (-12.1)  |
+| Pedigree_13        | 0.0 (nan)    | 92.5 (-16.7)  | 92.5 (-16.7)  |
+| Promedus_11        | 0.0 (nan)    | 96.0 (-8.6)   | 96.0 (-8.6)   |
+| Promedus_12        | 0.0 (nan)    | 93.6 (-3.3)   | 93.6 (-3.3)   |
+| Promedus_13        | 0.0 (nan)    | 97.4 (-4.6)   | 97.4 (-4.6)   |
+| Promedus_14        | 96.6 (-8.0)  | 96.6 (-8.0)   | 96.6 (-8.0)   |
+| Promedus_15        | 91.4 (-3.8)  | 91.4 (-3.8)   | 91.4 (-3.8)   |
+| Promedus_16        | 0.0 (nan)    | 99.3 (-7.0)   | 99.3 (-7.0)   |
+| Promedus_17        | 0.0 (nan)    | 99.6 (-9.5)   | 99.6 (-9.5)   |
+| Promedus_18        | 0.0 (nan)    | 99.9 (-4.7)   | 99.9 (-4.7)   |
+| Promedus_19        | 0.0 (nan)    | 100.0 (-4.3)  | 100.0 (-4.3)  |
+| Promedus_20        | 0.0 (nan)    | 94.1 (-7.3)   | 94.1 (-7.3)   |
+| Promedus_21        | 0.0 (nan)    | 88.9 (-5.8)   | 88.9 (-5.8)   |
+| Promedus_22        | 93.1 (-2.6)  | 93.1 (-2.6)   | 93.1 (-2.6)   |
+| Promedus_23        | 0.0 (nan)    | 94.9 (-11.5)  | 94.9 (-11.5)  |
+| Promedus_24        | 0.0 (nan)    | 99.8 (-5.9)   | 99.8 (-5.9)   |
+| Promedus_25        | 0.0 (nan)    | 98.4 (-9.5)   | 98.4 (-9.5)   |
+| Promedus_26        | 0.0 (nan)    | 98.8 (-7.3)   | 98.8 (-7.3)   |
+| Promedus_27        | 91.4 (-8.4)  | 91.4 (-8.4)   | 91.4 (-8.4)   |
+| Promedus_28        | 0.0 (nan)    | 95.0 (-8.3)   | 95.0 (-8.3)   |
+| Promedus_29        | 99.2 (-10.5) | 99.2 (-10.5)  | 99.2 (-10.5)  |
+| Promedus_30        | 95.3 (-22.2) | 95.3 (-22.2)  | 95.3 (-22.2)  |
+| Promedus_31        | 0.0 (nan)    | 89.3 (-2.0)   | 89.3 (-2.0)   |
+| Promedus_32        | 0.0 (nan)    | 95.4 (-2.3)   | 95.4 (-2.3)   |
+| Promedus_33        | 0.0 (nan)    | 99.9 (-2.8)   | 99.9 (-2.8)   |
+| Promedus_34        | 0.0 (nan)    | 90.2 (-3.3)   | 90.2 (-3.3)   |
+| Promedus_35        | 88.6 (-1.9)  | 88.6 (-1.9)   | 88.6 (-1.9)   |
+| Promedus_36        | 0.0 (nan)    | 88.6 (-1.9)   | 88.6 (-1.9)   |
+| Promedus_37        | 0.0 (nan)    | 96.4 (-4.3)   | 96.4 (-4.3)   |
+| Promedus_38        | 0.0 (nan)    | 95.5 (-5.2)   | 95.5 (-5.2)   |
+| Segmentation_11    | 0.0 (nan)    | 88.4 (-25.9)  | 88.4 (-25.9)  |
+| Segmentation_12    | 0.0 (nan)    | 100.0 (-10.3) | 100.0 (-10.3) |
+| Segmentation_13    | 0.0 (nan)    | 94.5 (-34.4)  | 94.5 (-34.4)  |
+| Segmentation_14    | 0.0 (nan)    | 99.1 (-39.7)  | 99.1 (-39.7)  |
+| Segmentation_15    | 0.0 (nan)    | 49.7 (-31.6)  | 49.7 (-31.6)  |
+| Segmentation_16    | 0.0 (nan)    | 98.3 (-38.5)  | 98.3 (-38.5)  |
+| grid10x10.f10      | 49.8 (349.7) | 49.8 (349.7)  | 49.8 (349.7)  |
+| linkage_12         | 0.0 (nan)    | 97.4 (-71.7)  | 97.4 (-71.7)  |
+| linkage_13         | 0.0 (nan)    | 97.9 (-77.3)  | 97.9 (-77.3)  |
+| linkage_14         | 0.0 (nan)    | 92.6 (-32.0)  | 92.6 (-32.0)  |
+| linkage_16         | 0.0 (nan)    | 82.2 (-41.3)  | 82.2 (-41.3)  |
+| linkage_18         | 0.0 (nan)    | 95.5 (-81.7)  | 95.5 (-81.7)  |
+| linkage_19         | 0.0 (nan)    | 94.1 (-62.6)  | 94.1 (-62.6)  |
+| linkage_21         | 0.0 (nan)    | 93.8 (-31.4)  | 93.8 (-31.4)  |
+| linkage_22         | 0.0 (nan)    | 93.7 (-57.2)  | 93.7 (-57.2)  |
+| linkage_23         | 0.0 (nan)    | 85.2 (-125.3) | 85.2 (-125.3) |
+| linkage_24         | 0.0 (nan)    | 95.0 (-87.0)  | 95.0 (-87.0)  |
+| linkage_26         | 0.0 (nan)    | 95.3 (-118.8) | 95.3 (-118.8) |
+| linkage_27         | 0.0 (nan)    | 90.5 (-67.7)  | 90.5 (-67.7)  |
 
 # MAR
 

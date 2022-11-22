@@ -1,6 +1,6 @@
 ---
 title: "Leader Board"
-date: 2022-11-08
+date: 2022-11-22
 permalink: /results/current-leader-board
 ---
 
@@ -21,6 +21,8 @@ The results below are organized as follows:
 | [Abstraction-Sampling](solver-scores/Abstraction-Sampling-scores.md) |  48.1 |      97 |    96.2 |
 | [lbp](solver-scores/lbp-scores.md)                                   |   8.6 |      88 |    88.0 |
 
+[Side-by-Side Comparisons](solver-scores/PR-scores-comparison.md)
+
 ### Solvers
 
 - ibia-pr: PR solver submission
@@ -35,6 +37,8 @@ The results below are organized as follows:
 | [ibia-mar](solver-scores/ibia-mar-scores.md)   |  71.1 |    76.4 |    76.4 |
 | [uai14-mar](solver-scores/uai14-mar-scores.md) |  61.6 |    76.5 |    76.5 |
 | [lbp](solver-scores/lbp-scores.md)             |   3.3 |    54.2 |    54.2 |
+
+[Side-by-Side Comparisons](solver-scores/MAR-scores-comparison.md)
 
 ### Solvers
 
@@ -52,6 +56,8 @@ The results below are organized as follows:
 | [toulbar2-vns](solver-scores/toulbar2-vns-scores.md)       |  83.3 |    86.4 |    86.4 |
 | [daoopt-test](solver-scores/daoopt-test-scores.md)         |  54.9 |    65.9 |    67.6 |
 | [uai14-mpe](solver-scores/uai14-mpe-scores.md)             |  43.7 |    50.1 |    52.1 |
+
+[Side-by-Side Comparisons](solver-scores/MPE-scores-comparison.md)
 
 ### Solvers
 
@@ -71,10 +77,26 @@ The results below are organized as follows:
 | [lbp-mmap](solver-scores/lbp-mmap-scores.md)     |   0.6 |    50.6 |    54.6 |
 | [uai16-mmap](solver-scores/uai16-mmap-scores.md) |   2.5 |    35.8 |    22.2 |
 
+[Side-by-Side Comparisons](solver-scores/MMAP-scores-comparison.md)
+
 ### Solvers
 
 - daoopt: uai 2012, 2014, and 2016 participant by Lars Otten
 - uai14-mmap: MMAP solver submission from UAI 2014
 - lbp-mmap: loopy belief propagation modified for solving MMAP
-- uai16-mmap: MMAP solver submission from uai 2016
+- uai16-mmap: Breadth rotating depth-first AND/OR branch and bound based scheme for MMAP
+
+# MLC
+
+|                  Solver                  | 60sec | 300sec |
+| ---------------------------------------- | ----: | -----: |
+| [RF_d-8](solver-scores/RF_d-8-scores.md) |  73.0 |   73.0 |
+| [RF_d-4](solver-scores/RF_d-4-scores.md) |  53.8 |   53.8 |
+
+[Side-by-Side Comparisons](solver-scores/MLC-scores-comparison.md)
+
+### Solvers
+
+- RF_d-8: scikit-learn random-forest learner using a depth of 8
+- RF_d-4: scikit-learn random-forest learner using a depth of 4
 

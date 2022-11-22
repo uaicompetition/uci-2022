@@ -1,6 +1,6 @@
 ---
 title: "ibia-mar Scores"
-date: 2022-11-08
+date: 2022-11-22
 permalink: /results/current-leader-board/solver-scores/ibia-mar-scores
 ---
 
