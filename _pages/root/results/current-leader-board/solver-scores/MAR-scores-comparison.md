@@ -1,6 +1,6 @@
 ---
 title: "MAR Scores"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/solver-scores/MAR-scores-comparison
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "MMAP overall Rankings"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/benchmark-rankings/MMAP-overall-rankings
 ---
 
@@ -14,8 +14,8 @@ The results below are organized as follows:
 
 |                       Solver                        | 20sec | 1200sec | 3600sec |
 | --------------------------------------------------- | ----: | ------: | ------: |
-| [daoopt](../solver-scores/daoopt-scores.md)         |  97.0 |    98.0 |    98.1 |
+| [daoopt](../solver-scores/daoopt-scores.md)         |  98.1 |    99.1 |    99.2 |
 | [uai14-mmap](../solver-scores/uai14-mmap-scores.md) |  41.1 |    41.6 |    41.8 |
-| [lbp-mmap](../solver-scores/lbp-mmap-scores.md)     |   0.6 |    50.6 |    54.6 |
+| [lbp-mmap](../solver-scores/lbp-mmap-scores.md)     |   0.6 |    51.0 |    55.0 |
 | [uai16-mmap](../solver-scores/uai16-mmap-scores.md) |   2.5 |    35.8 |    22.2 |
 

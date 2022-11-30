@@ -1,6 +1,6 @@
 ---
 title: "uai14-mar Scores"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/solver-scores/uai14-mar-scores
 ---
 

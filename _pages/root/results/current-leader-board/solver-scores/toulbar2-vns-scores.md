@@ -1,6 +1,6 @@
 ---
 title: "toulbar2-vns Scores"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/solver-scores/toulbar2-vns-scores
 ---
 
@@ -35,7 +35,7 @@ The results below are organized as follows:
 | ImageAlignment_13  | 100.0 (-2999.9) | 100.0 (-2999.9) | 100.0 (-2999.9) |
 | ImageAlignment_14  | 100.0 (-1557.5) | 100.0 (-1557.5) | 100.0 (-1557.5) |
 | ImageAlignment_15  | 100.0 (-1177.5) | 100.0 (-1177.5) | 100.0 (-1177.5) |
-| ObjectDetection_11 | 83.5 (4409.8)   | 83.5 (4409.8)   | 83.5 (4409.8)   |
+| ObjectDetection_11 | 99.8 (4409.8)   | 99.8 (4409.8)   | 99.8 (4409.8)   |
 | ObjectDetection_12 | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | ObjectDetection_13 | 0.0 (8883.1)    | 0.0 (8883.1)    | 0.0 (8883.1)    |
 | ObjectDetection_14 | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
@@ -117,7 +117,7 @@ The results below are organized as follows:
 | ProteinFolding_21  | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | ProteinFolding_22  | 0.0 (9948.1)    | 0.0 (9948.1)    | 0.0 (9948.1)    |
 | ProteinFolding_23  | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| ProteinFolding_24  | 49.6 (5066.6)   | 99.5 (5876.7)   | 99.1 (5883.1)   |
+| ProteinFolding_24  | 48.6 (5066.6)   | 98.5 (5876.7)   | 98.9 (5883.1)   |
 | ProteinFolding_25  | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | Segmentation_11    | 100.0 (-135.8)  | 100.0 (-135.8)  | 100.0 (-135.8)  |
 | Segmentation_12    | 100.0 (-22.2)   | 100.0 (-22.2)   | 100.0 (-22.2)   |
@@ -135,6 +135,6 @@ The results below are organized as follows:
 | wcsp_14            | 87.5 (-16.1)    | 87.6 (-16.1)    | 87.6 (-16.1)    |
 | wcsp_15            | 69.0 (-112.0)   | 69.0 (-112.0)   | 69.0 (-112.0)   |
 | wcsp_16            | 100.0 (-16.5)   | 100.0 (-16.5)   | 100.0 (-16.5)   |
-| wcsp_17            | 0.0 (nan)       | 99.6 (-12.3)    | 99.6 (-12.3)    |
+| wcsp_17            | 0.0 (nan)       | 100.0 (-12.3)   | 100.0 (-12.3)   |
 | wcsp_18            | 58.9 (-28.0)    | 58.9 (-28.0)    | 58.9 (-28.0)    |
 

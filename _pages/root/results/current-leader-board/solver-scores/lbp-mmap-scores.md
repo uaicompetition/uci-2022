@@ -1,6 +1,6 @@
 ---
 title: "lbp-mmap Scores"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/solver-scores/lbp-mmap-scores
 ---
 
@@ -50,7 +50,7 @@ The results below are organized as follows:
 | Promedas_15        | 0.0 (nan)    | 43.7 (-52.0)   | 43.7 (-52.0)    |
 | Promedas_16        | 0.0 (nan)    | 44.3 (-41.7)   | 44.3 (-41.7)    |
 | Promedas_17        | 0.0 (nan)    | 65.1 (-32.5)   | 65.1 (-32.5)    |
-| Promedas_18        | 0.0 (nan)    | 5.8 (-44.7)    | 5.8 (-44.7)     |
+| Promedas_18        | 0.0 (nan)    | 53.4 (-44.7)   | 53.4 (-44.7)    |
 | Promedas_19        | 0.0 (nan)    | 52.2 (-58.8)   | 52.2 (-58.8)    |
 | Promedas_20        | 0.0 (-inf)   | 0.0 (-inf)     | 0.0 (-inf)      |
 | Promedas_21        | 0.0 (nan)    | 0.0 (-inf)     | 0.0 (-inf)      |

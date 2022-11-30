@@ -1,6 +1,6 @@
 ---
 title: "uai16-mmap Scores"
-date: 2022-11-22
+date: 2022-11-29
 permalink: /results/current-leader-board/solver-scores/uai16-mmap-scores
 ---
 
