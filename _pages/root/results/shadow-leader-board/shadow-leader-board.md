@@ -14,89 +14,73 @@ The results below are organized as follows:
 
 # PR
 
-|                                Solver                                | 20sec | 1200sec | 3600sec |
-| -------------------------------------------------------------------- | ----: | ------: | ------: |
-| [ibia-pr](solver-scores/ibia-pr-scores.md)                           |  99.9 |     100 |   100.0 |
-| [uai14-pr](solver-scores/uai14-pr-scores.md)                         |  97.2 |     100 |   100.0 |
-| [Abstraction-Sampling](solver-scores/Abstraction-Sampling-scores.md) |  48.1 |      97 |    96.2 |
-| [lbp](solver-scores/lbp-scores.md)                                   |   8.6 |      88 |    88.0 |
+|                               Solver                               | 20sec | 1200sec | 3600sec |
+| ------------------------------------------------------------------ | ----: | ------: | ------: |
+| [uai14-pr](solver-scores/uai14-pr-scores.md)                       |  61.7 |    96.9 |    96.6 |
+| [ibia-pr](solver-scores/ibia-pr-scores.md)                         |  53.6 |    96.6 |    96.6 |
+| [wmbsearch-aobfs-pr](solver-scores/wmbsearch-aobfs-pr-scores.md)   |  36.2 |    11.6 |    11.6 |
+| [lbp-pr](solver-scores/lbp-pr-scores.md)                           |   5.8 |     2.0 |     2.0 |
+| [baseline](solver-scores/baseline-scores.md)                       |   0.0 |     0.0 |     0.0 |
+| [AbstractionSampling](solver-scores/AbstractionSampling-scores.md) |   0.0 |     0.0 |     0.0 |
 
 [Side-by-Side Comparisons](solver-scores/PR-scores-comparison.md)
 
 ### Solvers
 
-- ibia-pr: PR solver submission
 - uai14-pr: PR solver submission from UAI 2014
-- Abstraction-Sampling: Importance Sampling scheme in AND/OR trees
-- lbp: loopy belief propogation
+- ibia-pr: PR solver submission
+- wmbsearch-aobfs-pr: AND/OR best-first search scheme using the weighted mini-bucket guiding heuristic
+- lbp-pr: loopy belief propagation
+- baseline: weak baseline
+- AbstractionSampling: Importance Sampling scheme in AND/OR trees
 
 # MAR
 
 |                     Solver                     | 20sec | 1200sec | 3600sec |
 | ---------------------------------------------- | ----: | ------: | ------: |
-| [ibia-mar](solver-scores/ibia-mar-scores.md)   |  71.1 |    76.4 |    76.4 |
-| [uai14-mar](solver-scores/uai14-mar-scores.md) |  61.6 |    76.5 |    76.5 |
-| [lbp](solver-scores/lbp-scores.md)             |   3.3 |    54.2 |    54.2 |
+| [uai14-mar](solver-scores/uai14-mar-scores.md) |  59.1 |    80.5 |    81.8 |
+| [ibia-mar](solver-scores/ibia-mar-scores.md)   |  46.5 |    77.8 |    78.6 |
+| [lbp-mar](solver-scores/lbp-mar-scores.md)     |   8.9 |    41.0 |    58.4 |
+| [baseline](solver-scores/baseline-scores.md)   |   0.0 |     0.0 |     0.0 |
 
 [Side-by-Side Comparisons](solver-scores/MAR-scores-comparison.md)
 
 ### Solvers
 
-- ibia-mar: MAR solver submission
 - uai14-mar: MAR solver submission from UAI 2014
-- lbp: loopy belief propogation
+- ibia-mar: MAR solver submission
+- lbp-mar: loopy belief propogation
+- baseline: weak baseline
 
 # MPE
 
 |                           Solver                           | 20sec | 1200sec | 3600sec |
 | ---------------------------------------------------------- | ----: | ------: | ------: |
-| [toulbar2-vacint](solver-scores/toulbar2-vacint-scores.md) |  98.4 |    98.9 |    98.9 |
-| [daoopt](solver-scores/daoopt-scores.md)                   |  97.3 |    98.5 |    98.9 |
-| [toulbar2-ipr](solver-scores/toulbar2-ipr-scores.md)       |  97.4 |    98.6 |    98.7 |
-| [toulbar2-vns](solver-scores/toulbar2-vns-scores.md)       |  83.5 |    86.6 |    86.6 |
-| [daoopt-test](solver-scores/daoopt-test-scores.md)         |  54.5 |    65.6 |    67.3 |
-| [uai14-mpe](solver-scores/uai14-mpe-scores.md)             |  43.7 |    49.8 |    51.8 |
+| [daoopt-mpe](solver-scores/daoopt-mpe-scores.md)           |  50.1 |    64.6 |    64.5 |
+| [toulbar2-vacint](solver-scores/toulbar2-vacint-scores.md) |  48.3 |    53.5 |    53.6 |
+| [toulbar2-vns](solver-scores/toulbar2-vns-scores.md)       |  35.0 |    44.8 |    44.8 |
+| [daoopt-lh-mpe](solver-scores/daoopt-lh-mpe-scores.md)     |  14.8 |    26.9 |    26.9 |
+| [baseline](solver-scores/baseline-scores.md)               |   0.0 |     0.0 |     0.0 |
 
 [Side-by-Side Comparisons](solver-scores/MPE-scores-comparison.md)
 
 ### Solvers
 
+- daoopt-mpe: uai 2012, 2014, and 2016 participant by Lars Otten
 - toulbar2-vacint: A heuristic search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
-- daoopt: uai 2012, 2014, and 2016 participant by Lars Otten
-- toulbar2-ipr: An incremental precision-based incremental search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
 - toulbar2-vns: A variable neighborhood search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
-- daoopt-test: daoopt with less competitive settings
-- uai14-mpe: MPE solver submission from UAI 2014
+- daoopt-lh-mpe: DAOOPT scheme with lookahead by William Lam
+- baseline: weak baseline
 
 # MMAP
 
 |                      Solver                      | 20sec | 1200sec | 3600sec |
 | ------------------------------------------------ | ----: | ------: | ------: |
-| [daoopt](solver-scores/daoopt-scores.md)         |  98.1 |    99.1 |    99.2 |
-| [uai14-mmap](solver-scores/uai14-mmap-scores.md) |  41.1 |    41.6 |    41.8 |
-| [lbp-mmap](solver-scores/lbp-mmap-scores.md)     |   0.6 |    51.0 |    55.0 |
-| [uai16-mmap](solver-scores/uai16-mmap-scores.md) |   2.5 |    35.8 |    22.2 |
+| [uai14-mmap](solver-scores/uai14-mmap-scores.md) |     0 |       0 |       0 |
 
 [Side-by-Side Comparisons](solver-scores/MMAP-scores-comparison.md)
 
 ### Solvers
 
-- daoopt: uai 2012, 2014, and 2016 participant by Lars Otten
 - uai14-mmap: MMAP solver submission from UAI 2014
-- lbp-mmap: loopy belief propagation modified for solving MMAP
-- uai16-mmap: Breadth rotating depth-first AND/OR branch and bound based scheme for MMAP
-
-# MLC
-
-|                  Solver                  | 60sec | 300sec |
-| ---------------------------------------- | ----: | -----: |
-| [RF_d-8](solver-scores/RF_d-8-scores.md) |  73.0 |   73.0 |
-| [RF_d-4](solver-scores/RF_d-4-scores.md) |  53.8 |   53.8 |
-
-[Side-by-Side Comparisons](solver-scores/MLC-scores-comparison.md)
-
-### Solvers
-
-- RF_d-8: scikit-learn random-forest learner using a depth of 8
-- RF_d-4: scikit-learn random-forest learner using a depth of 4
 

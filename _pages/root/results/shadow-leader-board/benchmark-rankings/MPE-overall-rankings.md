@@ -14,10 +14,9 @@ The results below are organized as follows:
 
 |                            Solver                             | 20sec | 1200sec | 3600sec |
 | ------------------------------------------------------------- | ----: | ------: | ------: |
-| [toulbar2-vacint](../solver-scores/toulbar2-vacint-scores.md) |  98.4 |    98.9 |    98.9 |
-| [daoopt](../solver-scores/daoopt-scores.md)                   |  97.3 |    98.5 |    98.9 |
-| [toulbar2-ipr](../solver-scores/toulbar2-ipr-scores.md)       |  97.4 |    98.6 |    98.7 |
-| [toulbar2-vns](../solver-scores/toulbar2-vns-scores.md)       |  83.5 |    86.6 |    86.6 |
-| [daoopt-test](../solver-scores/daoopt-test-scores.md)         |  54.5 |    65.6 |    67.3 |
-| [uai14-mpe](../solver-scores/uai14-mpe-scores.md)             |  43.7 |    49.8 |    51.8 |
+| [daoopt-mpe](../solver-scores/daoopt-mpe-scores.md)           |  50.1 |    64.6 |    64.5 |
+| [toulbar2-vacint](../solver-scores/toulbar2-vacint-scores.md) |  48.3 |    53.5 |    53.6 |
+| [toulbar2-vns](../solver-scores/toulbar2-vns-scores.md)       |  35.0 |    44.8 |    44.8 |
+| [daoopt-lh-mpe](../solver-scores/daoopt-lh-mpe-scores.md)     |  14.8 |    26.9 |    26.9 |
+| [baseline](../solver-scores/baseline-scores.md)               |   0.0 |     0.0 |     0.0 |
 

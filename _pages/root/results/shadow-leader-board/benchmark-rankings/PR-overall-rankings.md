@@ -12,10 +12,12 @@ The results below are organized as follows:
 - clicking on a solver name links to its results on individual problem instances
 
 
-|                                 Solver                                  | 20sec | 1200sec | 3600sec |
-| ----------------------------------------------------------------------- | ----: | ------: | ------: |
-| [ibia-pr](../solver-scores/ibia-pr-scores.md)                           |  99.9 |     100 |   100.0 |
-| [uai14-pr](../solver-scores/uai14-pr-scores.md)                         |  97.2 |     100 |   100.0 |
-| [Abstraction-Sampling](../solver-scores/Abstraction-Sampling-scores.md) |  48.1 |      97 |    96.2 |
-| [lbp](../solver-scores/lbp-scores.md)                                   |   8.6 |      88 |    88.0 |
+|                                Solver                                 | 20sec | 1200sec | 3600sec |
+| --------------------------------------------------------------------- | ----: | ------: | ------: |
+| [uai14-pr](../solver-scores/uai14-pr-scores.md)                       |  61.7 |    96.9 |    96.6 |
+| [ibia-pr](../solver-scores/ibia-pr-scores.md)                         |  53.6 |    96.6 |    96.6 |
+| [wmbsearch-aobfs-pr](../solver-scores/wmbsearch-aobfs-pr-scores.md)   |  36.2 |    11.6 |    11.6 |
+| [lbp-pr](../solver-scores/lbp-pr-scores.md)                           |   5.8 |     2.0 |     2.0 |
+| [baseline](../solver-scores/baseline-scores.md)                       |   0.0 |     0.0 |     0.0 |
+| [AbstractionSampling](../solver-scores/AbstractionSampling-scores.md) |   0.0 |     0.0 |     0.0 |
 

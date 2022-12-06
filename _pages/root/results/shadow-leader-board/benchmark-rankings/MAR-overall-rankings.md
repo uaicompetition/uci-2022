@@ -14,7 +14,8 @@ The results below are organized as follows:
 
 |                      Solver                       | 20sec | 1200sec | 3600sec |
 | ------------------------------------------------- | ----: | ------: | ------: |
-| [ibia-mar](../solver-scores/ibia-mar-scores.md)   |  71.1 |    76.4 |    76.4 |
-| [uai14-mar](../solver-scores/uai14-mar-scores.md) |  61.6 |    76.5 |    76.5 |
-| [lbp](../solver-scores/lbp-scores.md)             |   3.3 |    54.2 |    54.2 |
+| [uai14-mar](../solver-scores/uai14-mar-scores.md) |  59.1 |    80.5 |    81.8 |
+| [ibia-mar](../solver-scores/ibia-mar-scores.md)   |  46.5 |    77.8 |    78.6 |
+| [lbp-mar](../solver-scores/lbp-mar-scores.md)     |   8.9 |    41.0 |    58.4 |
+| [baseline](../solver-scores/baseline-scores.md)   |   0.0 |     0.0 |     0.0 |
 
