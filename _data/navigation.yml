@@ -71,6 +71,8 @@ docs:
       url: /results/evaluation-criteria
     - title: "Current Leader Board"
       url: /results/current-leader-board
+    - title: "Test Leader Board"
+      url: /results/shadow-leader-board
     - title: "Archived Leader Boards"
       url: leaderboard
     - title: Tuning Benchmarks
