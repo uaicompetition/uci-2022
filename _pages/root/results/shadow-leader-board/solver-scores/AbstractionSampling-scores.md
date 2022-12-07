@@ -1,7 +1,7 @@
 ---
 title: "AbstractionSampling Scores"
 date: 2022-12-06
-permalink: /results/current-leader-board/solver-scores/AbstractionSampling-scores
+permalink: /results/shadow-leader-board/solver-scores/AbstractionSampling-scores
 ---
 
 
