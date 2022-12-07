@@ -1,7 +1,7 @@
 ---
 title: "Leader Board"
 date: 2022-12-06
-permalink: /results/current-leader-board
+permalink: /results/shadow-leader-board
 ---
 
 
