@@ -65,7 +65,7 @@ The results below are organized as follows:
 ### Solvers
 
 - toulbar2-vns-mpe: A variable neighborhood search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
-- toulbar2-ipr-mpe: An incremental precision-based incremental search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
+- toulbar2-ipr-mpe: An incremental precision-based search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
 - toulbar2-vacint-mpe: A heuristic search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
 - daoopt: uai 2012, 2014, and 2016 participant by Lars Otten
 - daoopt-lh-mpe: daoopt with look ahead heuristic
