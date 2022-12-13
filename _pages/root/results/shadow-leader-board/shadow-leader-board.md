@@ -93,7 +93,7 @@ The results below are organized as follows:
 
 - daoopt-mmap: uai 2012, 2014, and 2016 participant by Lars Otten
 - toulbar2-vns-mmap: A variable neighborhood search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
-- toulbar2-ipr-mmap: An incremental precision-based incremental search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
+- toulbar2-ipr-mmap: An incremental precision-based search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
 - daoopt-lh-mmap: DAOOPT scheme with lookahead by William Lam
 - toulbar2-vacint-mmap: A heuristic search method of former UAI competition winner [Toulbar2](https://github.com/toulbar2/toulbar2)
 - merlin-mmap: Breadth rotating depth-first AND/OR branch and bound based scheme for MMAP
