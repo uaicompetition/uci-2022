@@ -14,8 +14,8 @@ The results below are organized as follows:
 
 |                                 Solver                                  | 20sec | 1200sec | 3600sec |
 | ----------------------------------------------------------------------- | ----: | ------: | ------: |
-| [toulbar2-vns-mmap](../solver-scores/toulbar2-vns-mmap-scores.md)       |  70.4 |    72.1 |    72.2 |
 | [toulbar2-ipr-mmap](../solver-scores/toulbar2-ipr-mmap-scores.md)       |  67.7 |    72.7 |    73.3 |
+| [toulbar2-vns-mmap](../solver-scores/toulbar2-vns-mmap-scores.md)       |  70.4 |    72.1 |    72.2 |
 | [daoopt-mmap](../solver-scores/daoopt-mmap-scores.md)                   |  68.5 |    72.1 |    71.7 |
 | [toulbar2-vacint-mmap](../solver-scores/toulbar2-vacint-mmap-scores.md) |  68.9 |    71.3 |    71.4 |
 | [daoopt-lh-mmap](../solver-scores/daoopt-lh-mmap-scores.md)             |  64.5 |    66.4 |    67.6 |
