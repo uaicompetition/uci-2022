@@ -1,5 +1,5 @@
 ---
-title: "Leader Board"
+title: "Tuning Leader Board"
 date: 2022-12-12
 permalink: /results/current-leader-board
 ---
