@@ -1,6 +1,6 @@
 ---
 title: "daoopt-lh-mpe"
-date: 2022-12-22
+date: 2022-12-23
 permalink: /results/ongoing-leader-board/solver-scores/daoopt-lh-mpe-scores
 ---
 
@@ -11,7 +11,7 @@ DAOOPT scheme with lookahead by William Lam.  [paper](https://www.ics.uci.edu/~d
 
 ### Authors
 
-William Lam, Kalev Kask, Javier Larrosa, and Rina Dechter
+William Lam and Kalev Kask
 
 
 The results below are organized as follows:

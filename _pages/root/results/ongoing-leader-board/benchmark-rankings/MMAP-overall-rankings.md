@@ -1,6 +1,6 @@
 ---
 title: "MMAP overall Rankings"
-date: 2022-12-22
+date: 2022-12-23
 permalink: /results/ongoing-leader-board/benchmark-rankings/MMAP-overall-rankings
 ---
 

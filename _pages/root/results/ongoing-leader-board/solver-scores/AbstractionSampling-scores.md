@@ -1,6 +1,6 @@
 ---
 title: "AbstractionSampling"
-date: 2022-12-22
+date: 2022-12-23
 permalink: /results/ongoing-leader-board/solver-scores/AbstractionSampling-scores
 ---
 
@@ -11,7 +11,7 @@ Abstraction Sampling is an importance-sampling based scheme that serves as a mea
 
 ### Authors
 
-Kalev Kask, Bobak Pezeshki, Alex Ihler, and Rina Dechter
+Kalev Kask, Filjor Broka
 
 
 The results below are organized as follows:

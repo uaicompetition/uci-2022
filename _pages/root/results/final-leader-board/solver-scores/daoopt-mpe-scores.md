@@ -1,17 +1,17 @@
 ---
 title: "daoopt-mpe"
-date: 2022-12-22
+date: 2022-12-23
 permalink: /results/final-leader-board/solver-scores/daoopt-mpe-scores
 ---
 
 
 ### Description
 
-(paper)[https://www.ics.uci.edu/~dechter/publications/r195.pdf]
+[paper2](https://www.ics.uci.edu/~dechter/publications/r196.pdf), [paper2](https://www.ics.uci.edu/~dechter/publications/r195.pdf)
 
 ### Authors
 
-Lars Otten and Rina Dechter
+Lars Otten
 
 
 The results below are organized as follows:

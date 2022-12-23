@@ -1,17 +1,17 @@
 ---
 title: "daoopt-mmap"
-date: 2022-12-22
+date: 2022-12-23
 permalink: /results/ongoing-leader-board/solver-scores/daoopt-mmap-scores
 ---
 
 
 ### Description
 
-uai 2012, 2014, and 2016 participant by Lars Otten
+[paper2](https://www.ics.uci.edu/~dechter/publications/r196.pdf), [paper2](https://www.ics.uci.edu/~dechter/publications/r195.pdf)
 
 ### Authors
 
-Lars Otten and Rina Dechter
+Lars Otten
 
 
 The results below are organized as follows:
