@@ -11,7 +11,7 @@ Abstraction Sampling is an importance-sampling based scheme that serves as a mea
 
 ### Authors
 
-Kalev Kask, Filjor Broka
+Kalev Kask and Filjor Broka
 
 
 The results below are organized as follows:
