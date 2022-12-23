@@ -15,7 +15,7 @@ David Allouche, Simon de Givry, George Katsirelos, Samir Loudni, Pierre Montalba
 
 
 The results below are organized as follows:
-- each table displays the solver's normalized score for individual problem instances (and the associated log10 likelihood value) for the given task under different time limits
+- each table displays the solver's normalized score for individual problem instances (and, for PR, MPE, and MMAP, the associated log10 likelihood value) for the task under different time limits
 - table values are normalized scores for each evaluated problem as outlined in [Evaluation Criteria](https://uaicompetition.github.io/uci-2022/results/evaluation-criteria/)
 
 

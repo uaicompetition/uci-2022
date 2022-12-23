@@ -1,7 +1,7 @@
 ---
-title: "PR overall Rankings"
+title: "MPE overall Rankings"
 date: 2022-12-22
-permalink: /results/final-leader-board/benchmark-rankings/PR-overall-rankings
+permalink: /results/shadow-final-pt2-no-baseline-leader-board-2022-12-22/benchmark-rankings/MPE-overall-rankings
 ---
 
 
@@ -14,8 +14,9 @@ The results below are organized as follows:
 
 |                                Solver                                 | 20sec | 1200sec | 3600sec |
 | --------------------------------------------------------------------- | ----: | ------: | ------: |
-| [uai14-pr](../solver-scores/uai14-pr-scores.md)                       |  61.7 |    96.8 |    96.7 |
-| [ibia-pr](../solver-scores/ibia-pr-scores.md)                         |  53.6 |    96.6 |    97.1 |
-| [AbstractionSampling](../solver-scores/AbstractionSampling-scores.md) |  78.9 |    91.7 |    93.9 |
-| [lbp-pr](../solver-scores/lbp-pr-scores.md)                           |  90.3 |    89.9 |    90.2 |
+| [toulbar2-vacint-mpe](../solver-scores/toulbar2-vacint-mpe-scores.md) |  79.1 |    89.6 |    91.4 |
+| [daoopt-mpe](../solver-scores/daoopt-mpe-scores.md)                   |  75.4 |    89.5 |    92.1 |
+| [toulbar2-vns-mpe](../solver-scores/toulbar2-vns-mpe-scores.md)       |  84.2 |    89.0 |    89.2 |
+| [daoopt-lh-mpe](../solver-scores/daoopt-lh-mpe-scores.md)             |  73.2 |    85.1 |    90.7 |
+| [toulbar2-ipr-mpe](../solver-scores/toulbar2-ipr-mpe-scores.md)       |  63.4 |    88.9 |    89.0 |
 

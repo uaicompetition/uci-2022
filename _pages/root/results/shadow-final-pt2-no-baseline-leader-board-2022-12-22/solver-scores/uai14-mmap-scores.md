@@ -1,7 +1,7 @@
 ---
 title: "uai14-mmap"
 date: 2022-12-22
-permalink: /results/final-leader-board/solver-scores/uai14-mmap-scores
+permalink: /results/shadow-final-pt2-no-baseline-leader-board-2022-12-22/solver-scores/uai14-mmap-scores
 ---
 
 

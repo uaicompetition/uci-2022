@@ -1,7 +1,7 @@
 ---
 title: "MMAP overall Rankings"
 date: 2022-12-22
-permalink: /results/final-leader-board/benchmark-rankings/MMAP-overall-rankings
+permalink: /results/shadow-final-pt2-no-baseline-leader-board-2022-12-22/benchmark-rankings/MMAP-overall-rankings
 ---
 
 

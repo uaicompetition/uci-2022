@@ -1,17 +1,17 @@
 ---
-title: "toulbar2-vns-mmap"
+title: "toulbar2-vacint-mmap"
 date: 2022-12-22
-permalink: /results/final-leader-board/solver-scores/toulbar2-vns-mmap-scores
+permalink: /results/shadow-final-pt2-no-baseline-leader-board-2022-12-22/solver-scores/toulbar2-vacint-mmap-scores
 ---
 
 
 ### Description
 
-Toulbar2-VNS is a metaheuristic called variable neighborhood search that uses (partial) tree search inside its local neighborhood exploration. The approach consists of several neighborhood explorations of increasing search complexity, by controlling two parameters, the discrepancy limit, and the neighborhood size. Thus, the optimality of the obtained solutions can be proven when the neighborhood size is maximal and with an unbounded tree search. The tree decomposition uses a minimum fill-in ordering. Leaf clusters are merged with their fathers if the number of proper variables is too small. [Toulbar2](https://github.com/toulbar2/toulbar2)
+Toulbar2-VACINT uses an initial upper bound solution found by INCOP local search. Next, the solver enforces Virtual Arc Consistency in preprocessing. A hybrid best-first search method is performed, restarting from the root after a given backtrack number and following VAC-integrality/Full-EAC variable ordering heuristic. The solver also applies a VAC-based upper bound probing heuristic to find good solutions in preprocessing. [Toulbar2](https://github.com/toulbar2/toulbar2)
 
 ### Authors
 
-David Allouche, Simon de Givry, Samir Loudni, and Abdelkader Ouali
+David Allouche, Simon de Givry, George Katsirelos, Thomas Schiex, and Fulya Trösser
 
 
 The results below are organized as follows:
@@ -29,27 +29,27 @@ The results below are organized as follows:
 | 75-19-5.Q0.5.I2          | 100.0 (-9.6)    | 100.0 (-9.6)    | 100.0 (-9.6)    |
 | 75-22-5.Q0.5.I2          | 98.3 (-11.7)    | 98.3 (-11.7)    | 98.3 (-11.7)    |
 | 75-23-5.Q0.5.I3          | 100.0 (-12.5)   | 100.0 (-12.5)   | 100.0 (-12.5)   |
-| 75-26-5.Q0.5.I4          | 98.3 (-18.6)    | 100.0 (-18.1)   | 100.0 (-18.1)   |
+| 75-26-5.Q0.5.I4          | 99.5 (-18.2)    | 100.0 (-18.1)   | 100.0 (-18.1)   |
 | 90-22-5.Q0.5.I4          | 100.0 (-5.6)    | 100.0 (-5.6)    | 100.0 (-5.6)    |
 | 90-24-5.Q0.5.I2          | 99.4 (-5.7)     | 99.4 (-5.7)     | 99.4 (-5.7)     |
 | 90-25-5.Q0.5.I2          | 100.0 (-7.7)    | 100.0 (-7.7)    | 100.0 (-7.7)    |
 | 90-26-5.Q0.5.I1          | 99.5 (-8.7)     | 99.5 (-8.7)     | 99.5 (-8.7)     |
 | 90-30-5.Q0.5.I1          | 100.0 (-10.9)   | 100.0 (-10.9)   | 100.0 (-10.9)   |
 | 90-34-5.Q0.5.I2          | 100.0 (-12.2)   | 100.0 (-12.2)   | 100.0 (-12.2)   |
-| 90-38-5.Q0.5.I4          | 97.3 (-17.4)    | 100.0 (-16.8)   | 100.0 (-16.8)   |
-| 90-42-5.Q0.5.I4          | 97.7 (-17.7)    | 100.0 (-17.0)   | 100.0 (-17.0)   |
-| 90-46-5.Q0.5.I4          | 99.1 (-24.8)    | 98.4 (-25.0)    | 100.0 (-24.5)   |
-| 90-50-5.Q0.5.I3          | 100.0 (-25.7)   | 100.0 (-25.7)   | 100.0 (-25.7)   |
-| Grids_20                 | 73.2 (4796.0)   | 98.4 (4836.5)   | 98.4 (4836.5)   |
-| Grids_21                 | 83.3 (8420.1)   | 87.0 (8438.1)   | 87.0 (8438.1)   |
-| Grids_22                 | 71.0 (2801.1)   | 90.0 (2823.4)   | 90.0 (2823.4)   |
-| Grids_23                 | 88.3 (2780.3)   | 88.3 (2780.3)   | 88.3 (2780.3)   |
-| Grids_24                 | 80.1 (8155.9)   | 84.8 (8175.2)   | 84.8 (8175.2)   |
-| Grids_25                 | 98.4 (1209.1)   | 98.4 (1209.1)   | 98.4 (1209.1)   |
-| Grids_26                 | 87.3 (1319.6)   | 87.3 (1319.6)   | 92.4 (1322.2)   |
-| Grids_27                 | 84.3 (5477.6)   | 90.4 (5489.7)   | 90.4 (5489.7)   |
-| Grids_28                 | 75.5 (1972.6)   | 75.5 (1972.6)   | 75.5 (1972.6)   |
-| Grids_29                 | 87.7 (670.4)    | 87.7 (670.4)    | 87.7 (670.4)    |
+| 90-38-5.Q0.5.I4          | 100.0 (-16.8)   | 100.0 (-16.8)   | 100.0 (-16.8)   |
+| 90-42-5.Q0.5.I4          | 100.0 (-17.0)   | 100.0 (-17.0)   | 100.0 (-17.0)   |
+| 90-46-5.Q0.5.I4          | 99.0 (-24.8)    | 98.7 (-24.9)    | 98.7 (-24.9)    |
+| 90-50-5.Q0.5.I3          | 98.7 (-26.4)    | 100.0 (-25.7)   | 100.0 (-25.7)   |
+| Grids_20                 | 51.7 (4761.5)   | 82.7 (4811.2)   | 86.1 (4816.7)   |
+| Grids_21                 | 69.2 (8353.4)   | 70.2 (8357.8)   | 70.2 (8357.8)   |
+| Grids_22                 | 59.9 (2788.1)   | 66.9 (2796.2)   | 67.6 (2797.1)   |
+| Grids_23                 | 84.5 (2776.2)   | 86.8 (2778.7)   | 86.8 (2778.7)   |
+| Grids_24                 | 80.6 (8157.8)   | 81.4 (8160.9)   | 81.4 (8160.9)   |
+| Grids_25                 | 77.7 (1199.5)   | 77.7 (1199.5)   | 77.7 (1199.5)   |
+| Grids_26                 | 89.1 (1320.5)   | 90.8 (1321.4)   | 90.8 (1321.4)   |
+| Grids_27                 | 49.4 (5407.8)   | 49.5 (5408.1)   | 56.7 (5422.5)   |
+| Grids_28                 | 65.6 (1968.6)   | 88.1 (1977.7)   | 89.4 (1978.2)   |
+| Grids_29                 | 53.1 (663.2)    | 96.6 (672.3)    | 96.6 (672.3)    |
 | ImageAlignment_11        | 100.0 (-824.2)  | 100.0 (-824.2)  | 100.0 (-824.2)  |
 | ImageAlignment_12        | 100.0 (-436.7)  | 100.0 (-436.7)  | 100.0 (-436.7)  |
 | ImageAlignment_13        | 99.8 (-2999.8)  | 99.8 (-2999.8)  | 99.8 (-2999.8)  |
@@ -60,7 +60,7 @@ The results below are organized as follows:
 | ObjectDetection_15       | 100.0 (12633.3) | 100.0 (12633.3) | 100.0 (12633.3) |
 | ObjectDetection_16       | 100.0 (14347.1) | 100.0 (14347.1) | 100.0 (14347.1) |
 | ObjectDetection_17       | 100.0 (4887.4)  | 100.0 (4887.4)  | 100.0 (4887.4)  |
-| ProteinFolding_11        | 97.1 (1944.8)   | 97.1 (1944.8)   | 97.1 (1944.8)   |
+| ProteinFolding_11        | 98.4 (1952.7)   | 99.6 (1959.7)   | 99.6 (1959.7)   |
 | ProteinFolding_12        | 100.0 (-1547.0) | 100.0 (-1547.0) | 100.0 (-1547.0) |
 | ProteinFolding_13        | 100.0 (-143.3)  | 100.0 (-143.3)  | 100.0 (-143.3)  |
 | ProteinFolding_14        | 100.0 (-331.7)  | 100.0 (-331.7)  | 100.0 (-331.7)  |
@@ -86,7 +86,7 @@ The results below are organized as follows:
 | comm_p01_16              | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | comm_p01_20              | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_11.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| or_chain_16.fg.Q0.5.I3   | 99.7 (-23.6)    | 100.0 (-23.4)   | 100.0 (-23.4)   |
+| or_chain_16.fg.Q0.5.I3   | 100.0 (-23.4)   | 100.0 (-23.4)   | 100.0 (-23.4)   |
 | or_chain_22.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_24.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_25.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
@@ -100,29 +100,29 @@ The results below are organized as follows:
 | or_chain_60.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_63.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_8.fg.Q0.5.I3    | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| pedigree1.Q0.5.I3        | 94.0 (-36.1)    | 94.0 (-36.1)    | 94.0 (-36.1)    |
-| pedigree13.Q0.5.I1       | 99.7 (-62.5)    | 99.7 (-62.5)    | 99.7 (-62.5)    |
-| pedigree18.Q0.5.I1       | 96.7 (-113.5)   | 96.7 (-113.5)   | 96.7 (-113.5)   |
-| pedigree19.Q0.5.I4       | 93.9 (-90.9)    | 94.8 (-90.2)    | 95.7 (-89.6)    |
+| pedigree1.Q0.5.I3        | 100.0 (-35.7)   | 100.0 (-35.7)   | 100.0 (-35.7)   |
+| pedigree13.Q0.5.I1       | 99.2 (-62.7)    | 99.2 (-62.7)    | 99.2 (-62.7)    |
+| pedigree18.Q0.5.I1       | 97.2 (-113.2)   | 96.8 (-113.4)   | 97.7 (-112.9)   |
+| pedigree19.Q0.5.I4       | 93.0 (-91.5)    | 94.6 (-90.4)    | 95.8 (-89.5)    |
 | pedigree20.Q0.5.I2       | 100.0 (-46.1)   | 100.0 (-46.1)   | 100.0 (-46.1)   |
-| pedigree25.Q0.5.I2       | 100.0 (-145.6)  | 95.4 (-147.8)   | 95.4 (-147.8)   |
-| pedigree30.Q0.5.I2       | 98.8 (-123.9)   | 98.2 (-124.3)   | 98.2 (-124.3)   |
-| pedigree31.Q0.5.I2       | 100.0 (-115.4)  | 99.8 (-115.6)   | 99.8 (-115.6)   |
-| pedigree33.Q0.5.I2       | 94.4 (-71.1)    | 94.4 (-71.1)    | 94.4 (-71.1)    |
-| pedigree38.Q0.5.I2       | 99.2 (-77.8)    | 99.2 (-77.8)    | 99.2 (-77.8)    |
-| pedigree41.Q0.5.I2       | 98.4 (-106.7)   | 96.3 (-108.2)   | 96.3 (-108.2)   |
-| pedigree44.Q0.5.I4       | 100.0 (-87.7)   | 96.5 (-89.3)    | 95.6 (-89.7)    |
-| pedigree50.Q0.5.I1       | 100.0 (-52.0)   | 100.0 (-52.0)   | 100.0 (-52.0)   |
-| pedigree7.Q0.5.I2        | 97.9 (-98.3)    | 97.9 (-98.3)    | 97.9 (-98.3)    |
-| pedigree9.Q0.5.I3        | 95.9 (-115.4)   | 98.0 (-114.0)   | 98.0 (-114.0)   |
+| pedigree25.Q0.5.I2       | 96.4 (-147.3)   | 96.4 (-147.3)   | 96.4 (-147.3)   |
+| pedigree30.Q0.5.I2       | 97.6 (-124.6)   | 100.0 (-123.1)  | 100.0 (-123.1)  |
+| pedigree31.Q0.5.I2       | 97.2 (-117.6)   | 97.2 (-117.6)   | 97.2 (-117.6)   |
+| pedigree33.Q0.5.I2       | 95.6 (-70.4)    | 95.6 (-70.4)    | 95.6 (-70.4)    |
+| pedigree38.Q0.5.I2       | 99.6 (-77.6)    | 99.6 (-77.6)    | 99.6 (-77.6)    |
+| pedigree41.Q0.5.I2       | 96.4 (-108.1)   | 97.0 (-107.7)   | 97.0 (-107.7)   |
+| pedigree44.Q0.5.I4       | 97.8 (-88.7)    | 96.3 (-89.4)    | 96.3 (-89.4)    |
+| pedigree50.Q0.5.I1       | 96.5 (-53.1)    | 96.5 (-53.1)    | 96.5 (-53.1)    |
+| pedigree7.Q0.5.I2        | 98.9 (-98.0)    | 98.9 (-98.0)    | 98.9 (-98.0)    |
+| pedigree9.Q0.5.I3        | 99.8 (-112.8)   | 100.0 (-112.7)  | 100.0 (-112.7)  |
 | pomdp10-12_7_3_8_4.mmap  | 0.0 (nan)       | 100.0 (1.2)     | 100.0 (1.2)     |
-| pomdp6-12_6_2_6_3.mmap   | 93.8 (1.0)      | 93.8 (1.0)      | 93.8 (1.0)      |
+| pomdp6-12_6_2_6_3.mmap   | 72.0 (1.0)      | 93.8 (1.0)      | 93.8 (1.0)      |
 | pomdp7-20_10_2_10_3.mmap | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| pomdp8-14_9_3_12_4.mmap  | 88.3 (1.4)      | 89.3 (1.4)      | 89.3 (1.4)      |
+| pomdp8-14_9_3_12_4.mmap  | 89.6 (1.4)      | 89.6 (1.4)      | 89.6 (1.4)      |
 | pomdp9-14_8_3_10_4.mmap  | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | wcsp_14                  | 100.0 (1.1)     | 100.0 (1.1)     | 100.0 (1.1)     |
-| wcsp_15                  | 78.3 (-98.4)    | 92.0 (-83.4)    | 92.0 (-83.4)    |
-| wcsp_16                  | 100.0 (23.2)    | 100.0 (23.2)    | 100.0 (23.2)    |
-| wcsp_17                  | 99.9 (34.8)     | 99.9 (34.8)     | 99.9 (34.8)     |
+| wcsp_15                  | 96.4 (-78.6)    | 96.4 (-78.6)    | 96.4 (-78.6)    |
+| wcsp_16                  | 99.6 (22.8)     | 99.6 (22.8)     | 99.6 (22.8)     |
+| wcsp_17                  | 99.1 (33.4)     | 100.0 (35.0)    | 100.0 (35.0)    |
 | wcsp_18                  | 100.0 (0.2)     | 100.0 (0.2)     | 100.0 (0.2)     |
 

@@ -19,5 +19,4 @@ The results below are organized as follows:
 | [toulbar2-vns-mpe](../solver-scores/toulbar2-vns-mpe-scores.md)       |  84.2 |    89.0 |    89.2 |
 | [daoopt-lh-mpe](../solver-scores/daoopt-lh-mpe-scores.md)             |  73.2 |    85.1 |    90.7 |
 | [toulbar2-ipr-mpe](../solver-scores/toulbar2-ipr-mpe-scores.md)       |  63.4 |    88.9 |    89.0 |
-| [baseline](../solver-scores/baseline-scores.md)                       |   0.0 |     0.0 |     0.0 |
 

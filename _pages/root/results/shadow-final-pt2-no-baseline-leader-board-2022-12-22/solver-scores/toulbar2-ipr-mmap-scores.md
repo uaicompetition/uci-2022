@@ -1,17 +1,17 @@
 ---
-title: "toulbar2-vns-mmap"
+title: "toulbar2-ipr-mmap"
 date: 2022-12-22
-permalink: /results/final-leader-board/solver-scores/toulbar2-vns-mmap-scores
+permalink: /results/shadow-final-pt2-no-baseline-leader-board-2022-12-22/solver-scores/toulbar2-ipr-mmap-scores
 ---
 
 
 ### Description
 
-Toulbar2-VNS is a metaheuristic called variable neighborhood search that uses (partial) tree search inside its local neighborhood exploration. The approach consists of several neighborhood explorations of increasing search complexity, by controlling two parameters, the discrepancy limit, and the neighborhood size. Thus, the optimality of the obtained solutions can be proven when the neighborhood size is maximal and with an unbounded tree search. The tree decomposition uses a minimum fill-in ordering. Leaf clusters are merged with their fathers if the number of proper variables is too small. [Toulbar2](https://github.com/toulbar2/toulbar2)
+Toulbar2-ipr is inspired by an energy landscape-flattering approach coming from physics.  The procedure is an iterative approach based on VNS with an increasing precision followed by VACINT approach with full precision.  Each iteration uses a time contract and the best solution previously found.  The initial solution is provided by a VNS local search with low precision. During the first half time, the upper bound solution from the previous precision is the starting point of the next VNS search, performed with a larger duration and increased precision. Starting from the best solution known so far, the remaining half-time is dedicated to the optimality proof using the VACINT approach at full precision and enforcing virtual pairwise consistency during search on a binary encoding of the problem. Incop local search solver followed by a partition crossover combined with an iterative local search are performed to find good initial upper bound solutions. [Toulbar2](https://github.com/toulbar2/toulbar2)
 
 ### Authors
 
-David Allouche, Simon de Givry, Samir Loudni, and Abdelkader Ouali
+David Allouche, Simon de Givry, George Katsirelos, Samir Loudni, Pierre Montalbano, Abdelkader Ouali, Thomas Schiex,  David Simoncini, and Fulya Trösser
 
 
 The results below are organized as follows:
@@ -29,27 +29,27 @@ The results below are organized as follows:
 | 75-19-5.Q0.5.I2          | 100.0 (-9.6)    | 100.0 (-9.6)    | 100.0 (-9.6)    |
 | 75-22-5.Q0.5.I2          | 98.3 (-11.7)    | 98.3 (-11.7)    | 98.3 (-11.7)    |
 | 75-23-5.Q0.5.I3          | 100.0 (-12.5)   | 100.0 (-12.5)   | 100.0 (-12.5)   |
-| 75-26-5.Q0.5.I4          | 98.3 (-18.6)    | 100.0 (-18.1)   | 100.0 (-18.1)   |
+| 75-26-5.Q0.5.I4          | 100.0 (-18.1)   | 100.0 (-18.1)   | 100.0 (-18.1)   |
 | 90-22-5.Q0.5.I4          | 100.0 (-5.6)    | 100.0 (-5.6)    | 100.0 (-5.6)    |
 | 90-24-5.Q0.5.I2          | 99.4 (-5.7)     | 99.4 (-5.7)     | 99.4 (-5.7)     |
 | 90-25-5.Q0.5.I2          | 100.0 (-7.7)    | 100.0 (-7.7)    | 100.0 (-7.7)    |
 | 90-26-5.Q0.5.I1          | 99.5 (-8.7)     | 99.5 (-8.7)     | 99.5 (-8.7)     |
 | 90-30-5.Q0.5.I1          | 100.0 (-10.9)   | 100.0 (-10.9)   | 100.0 (-10.9)   |
 | 90-34-5.Q0.5.I2          | 100.0 (-12.2)   | 100.0 (-12.2)   | 100.0 (-12.2)   |
-| 90-38-5.Q0.5.I4          | 97.3 (-17.4)    | 100.0 (-16.8)   | 100.0 (-16.8)   |
-| 90-42-5.Q0.5.I4          | 97.7 (-17.7)    | 100.0 (-17.0)   | 100.0 (-17.0)   |
-| 90-46-5.Q0.5.I4          | 99.1 (-24.8)    | 98.4 (-25.0)    | 100.0 (-24.5)   |
+| 90-38-5.Q0.5.I4          | 100.0 (-16.8)   | 100.0 (-16.8)   | 100.0 (-16.8)   |
+| 90-42-5.Q0.5.I4          | 100.0 (-17.0)   | 100.0 (-17.0)   | 100.0 (-17.0)   |
+| 90-46-5.Q0.5.I4          | 98.7 (-24.9)    | 98.7 (-24.9)    | 98.7 (-24.9)    |
 | 90-50-5.Q0.5.I3          | 100.0 (-25.7)   | 100.0 (-25.7)   | 100.0 (-25.7)   |
-| Grids_20                 | 73.2 (4796.0)   | 98.4 (4836.5)   | 98.4 (4836.5)   |
-| Grids_21                 | 83.3 (8420.1)   | 87.0 (8438.1)   | 87.0 (8438.1)   |
-| Grids_22                 | 71.0 (2801.1)   | 90.0 (2823.4)   | 90.0 (2823.4)   |
-| Grids_23                 | 88.3 (2780.3)   | 88.3 (2780.3)   | 88.3 (2780.3)   |
-| Grids_24                 | 80.1 (8155.9)   | 84.8 (8175.2)   | 84.8 (8175.2)   |
-| Grids_25                 | 98.4 (1209.1)   | 98.4 (1209.1)   | 98.4 (1209.1)   |
-| Grids_26                 | 87.3 (1319.6)   | 87.3 (1319.6)   | 92.4 (1322.2)   |
-| Grids_27                 | 84.3 (5477.6)   | 90.4 (5489.7)   | 90.4 (5489.7)   |
-| Grids_28                 | 75.5 (1972.6)   | 75.5 (1972.6)   | 75.5 (1972.6)   |
-| Grids_29                 | 87.7 (670.4)    | 87.7 (670.4)    | 87.7 (670.4)    |
+| Grids_20                 | 0.0 (nan)       | 99.0 (4837.5)   | 99.0 (4837.5)   |
+| Grids_21                 | 54.1 (8281.5)   | 94.1 (8471.7)   | 100.0 (8499.7)  |
+| Grids_22                 | 35.6 (2759.6)   | 100.0 (2835.2)  | 100.0 (2835.2)  |
+| Grids_23                 | 98.8 (2792.1)   | 99.7 (2793.0)   | 99.7 (2793.0)   |
+| Grids_24                 | 82.5 (8165.6)   | 94.4 (8214.3)   | 100.0 (8237.3)  |
+| Grids_25                 | 98.7 (1209.3)   | 98.7 (1209.3)   | 98.7 (1209.3)   |
+| Grids_26                 | 100.0 (1326.3)  | 100.0 (1326.3)  | 100.0 (1326.3)  |
+| Grids_27                 | 43.4 (5395.9)   | 97.6 (5504.1)   | 100.0 (5508.9)  |
+| Grids_28                 | 100.0 (1982.5)  | 100.0 (1982.5)  | 100.0 (1982.5)  |
+| Grids_29                 | 100.0 (673.0)   | 100.0 (673.0)   | 100.0 (673.0)   |
 | ImageAlignment_11        | 100.0 (-824.2)  | 100.0 (-824.2)  | 100.0 (-824.2)  |
 | ImageAlignment_12        | 100.0 (-436.7)  | 100.0 (-436.7)  | 100.0 (-436.7)  |
 | ImageAlignment_13        | 99.8 (-2999.8)  | 99.8 (-2999.8)  | 99.8 (-2999.8)  |
@@ -60,7 +60,7 @@ The results below are organized as follows:
 | ObjectDetection_15       | 100.0 (12633.3) | 100.0 (12633.3) | 100.0 (12633.3) |
 | ObjectDetection_16       | 100.0 (14347.1) | 100.0 (14347.1) | 100.0 (14347.1) |
 | ObjectDetection_17       | 100.0 (4887.4)  | 100.0 (4887.4)  | 100.0 (4887.4)  |
-| ProteinFolding_11        | 97.1 (1944.8)   | 97.1 (1944.8)   | 97.1 (1944.8)   |
+| ProteinFolding_11        | 100.0 (1962.3)  | 100.0 (1962.3)  | 100.0 (1962.3)  |
 | ProteinFolding_12        | 100.0 (-1547.0) | 100.0 (-1547.0) | 100.0 (-1547.0) |
 | ProteinFolding_13        | 100.0 (-143.3)  | 100.0 (-143.3)  | 100.0 (-143.3)  |
 | ProteinFolding_14        | 100.0 (-331.7)  | 100.0 (-331.7)  | 100.0 (-331.7)  |
@@ -86,7 +86,7 @@ The results below are organized as follows:
 | comm_p01_16              | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | comm_p01_20              | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_11.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| or_chain_16.fg.Q0.5.I3   | 99.7 (-23.6)    | 100.0 (-23.4)   | 100.0 (-23.4)   |
+| or_chain_16.fg.Q0.5.I3   | 100.0 (-23.4)   | 100.0 (-23.4)   | 100.0 (-23.4)   |
 | or_chain_22.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_24.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_25.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
@@ -100,29 +100,29 @@ The results below are organized as follows:
 | or_chain_60.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_63.fg.Q0.5.I3   | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
 | or_chain_8.fg.Q0.5.I3    | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| pedigree1.Q0.5.I3        | 94.0 (-36.1)    | 94.0 (-36.1)    | 94.0 (-36.1)    |
-| pedigree13.Q0.5.I1       | 99.7 (-62.5)    | 99.7 (-62.5)    | 99.7 (-62.5)    |
-| pedigree18.Q0.5.I1       | 96.7 (-113.5)   | 96.7 (-113.5)   | 96.7 (-113.5)   |
-| pedigree19.Q0.5.I4       | 93.9 (-90.9)    | 94.8 (-90.2)    | 95.7 (-89.6)    |
-| pedigree20.Q0.5.I2       | 100.0 (-46.1)   | 100.0 (-46.1)   | 100.0 (-46.1)   |
-| pedigree25.Q0.5.I2       | 100.0 (-145.6)  | 95.4 (-147.8)   | 95.4 (-147.8)   |
-| pedigree30.Q0.5.I2       | 98.8 (-123.9)   | 98.2 (-124.3)   | 98.2 (-124.3)   |
-| pedigree31.Q0.5.I2       | 100.0 (-115.4)  | 99.8 (-115.6)   | 99.8 (-115.6)   |
-| pedigree33.Q0.5.I2       | 94.4 (-71.1)    | 94.4 (-71.1)    | 94.4 (-71.1)    |
-| pedigree38.Q0.5.I2       | 99.2 (-77.8)    | 99.2 (-77.8)    | 99.2 (-77.8)    |
-| pedigree41.Q0.5.I2       | 98.4 (-106.7)   | 96.3 (-108.2)   | 96.3 (-108.2)   |
-| pedigree44.Q0.5.I4       | 100.0 (-87.7)   | 96.5 (-89.3)    | 95.6 (-89.7)    |
-| pedigree50.Q0.5.I1       | 100.0 (-52.0)   | 100.0 (-52.0)   | 100.0 (-52.0)   |
-| pedigree7.Q0.5.I2        | 97.9 (-98.3)    | 97.9 (-98.3)    | 97.9 (-98.3)    |
-| pedigree9.Q0.5.I3        | 95.9 (-115.4)   | 98.0 (-114.0)   | 98.0 (-114.0)   |
-| pomdp10-12_7_3_8_4.mmap  | 0.0 (nan)       | 100.0 (1.2)     | 100.0 (1.2)     |
-| pomdp6-12_6_2_6_3.mmap   | 93.8 (1.0)      | 93.8 (1.0)      | 93.8 (1.0)      |
+| pedigree1.Q0.5.I3        | 78.2 (-37.1)    | 100.0 (-35.7)   | 100.0 (-35.7)   |
+| pedigree13.Q0.5.I1       | 99.0 (-62.7)    | 98.8 (-62.8)    | 98.8 (-62.8)    |
+| pedigree18.Q0.5.I1       | 97.8 (-112.9)   | 99.0 (-112.2)   | 98.5 (-112.5)   |
+| pedigree19.Q0.5.I4       | 95.5 (-89.8)    | 99.2 (-87.2)    | 99.3 (-87.1)    |
+| pedigree20.Q0.5.I2       | 97.7 (-47.1)    | 95.8 (-47.9)    | 95.8 (-47.9)    |
+| pedigree25.Q0.5.I2       | 96.0 (-147.5)   | 95.8 (-147.6)   | 95.8 (-147.6)   |
+| pedigree30.Q0.5.I2       | 98.2 (-124.2)   | 99.3 (-123.6)   | 99.3 (-123.6)   |
+| pedigree31.Q0.5.I2       | 99.6 (-115.8)   | 98.1 (-117.0)   | 98.1 (-117.0)   |
+| pedigree33.Q0.5.I2       | 94.1 (-71.3)    | 94.6 (-71.0)    | 94.6 (-71.0)    |
+| pedigree38.Q0.5.I2       | 99.5 (-77.6)    | 99.9 (-77.5)    | 99.9 (-77.5)    |
+| pedigree41.Q0.5.I2       | 97.0 (-107.7)   | 97.9 (-107.0)   | 98.2 (-106.8)   |
+| pedigree44.Q0.5.I4       | 96.4 (-89.3)    | 96.8 (-89.2)    | 97.0 (-89.1)    |
+| pedigree50.Q0.5.I1       | 95.1 (-53.5)    | 96.3 (-53.1)    | 96.3 (-53.1)    |
+| pedigree7.Q0.5.I2        | 97.2 (-98.6)    | 97.8 (-98.4)    | 97.8 (-98.4)    |
+| pedigree9.Q0.5.I3        | 98.3 (-113.8)   | 98.3 (-113.8)   | 98.9 (-113.4)   |
+| pomdp10-12_7_3_8_4.mmap  | 0.0 (nan)       | 41.0 (1.2)      | 88.3 (1.2)      |
+| pomdp6-12_6_2_6_3.mmap   | 64.2 (1.0)      | 93.8 (1.0)      | 93.8 (1.0)      |
 | pomdp7-20_10_2_10_3.mmap | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| pomdp8-14_9_3_12_4.mmap  | 88.3 (1.4)      | 89.3 (1.4)      | 89.3 (1.4)      |
+| pomdp8-14_9_3_12_4.mmap  | 0.0 (nan)       | 88.8 (1.4)      | 89.5 (1.4)      |
 | pomdp9-14_8_3_10_4.mmap  | 0.0 (nan)       | 0.0 (nan)       | 0.0 (nan)       |
-| wcsp_14                  | 100.0 (1.1)     | 100.0 (1.1)     | 100.0 (1.1)     |
-| wcsp_15                  | 78.3 (-98.4)    | 92.0 (-83.4)    | 92.0 (-83.4)    |
-| wcsp_16                  | 100.0 (23.2)    | 100.0 (23.2)    | 100.0 (23.2)    |
-| wcsp_17                  | 99.9 (34.8)     | 99.9 (34.8)     | 99.9 (34.8)     |
+| wcsp_14                  | 92.0 (-9.0)     | 100.0 (1.1)     | 100.0 (1.1)     |
+| wcsp_15                  | 99.3 (-75.4)    | 99.3 (-75.4)    | 99.3 (-75.4)    |
+| wcsp_16                  | 99.6 (22.8)     | 99.6 (22.9)     | 99.6 (22.9)     |
+| wcsp_17                  | 69.8 (-22.1)    | 99.9 (34.9)     | 99.9 (34.9)     |
 | wcsp_18                  | 100.0 (0.2)     | 100.0 (0.2)     | 100.0 (0.2)     |
 
