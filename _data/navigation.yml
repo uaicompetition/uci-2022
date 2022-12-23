@@ -69,13 +69,15 @@ docs:
     children:
     - title: "Evaluation Criteria"
       url: /results/evaluation-criteria
-    - title: "Current Leader Board"
+    - title: "Tuning Leader Board"
       url: /results/current-leader-board
-    - title: "Archived Leader Boards"
-      url: leaderboard
-    - title: Tuning Benchmarks
-      url: /results/tuning-benchmarks
-    - title: "Summary"
-      url: summary
+    - title: "Final Leader Board"
+      url: /results/final-leader-board
+#     - title: "Archived Leader Boards"
+#       url: leaderboard
+#     - title: Tuning Benchmarks
+#       url: /results/tuning-benchmarks
+#     - title: "Summary"
+#       url: summary
 #https://personal.utdallas.edu/~vibhav.gogate/uai14-competition/leaders.html
 
