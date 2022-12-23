@@ -75,6 +75,8 @@ docs:
       url: /results/final-leader-board
     - title: "Ongoing Evaluations"
       url: /results/ongoing-leader-board
+    - title: Benchmarks
+      url: /results/benchmarks
 #     - title: "Archived Leader Boards"
 #       url: leaderboard
 #     - title: Tuning Benchmarks
