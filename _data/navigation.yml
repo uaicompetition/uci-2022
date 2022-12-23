@@ -71,8 +71,10 @@ docs:
       url: /results/evaluation-criteria
     - title: "Tuning Leader Board"
       url: /results/current-leader-board
-    - title: "Final Leader Board"
+    - title: "Final 2022 Leader Board"
       url: /results/final-leader-board
+    - title: "Ongoing Evaluations"
+      url: /results/ongoing-leader-board
 #     - title: "Archived Leader Boards"
 #       url: leaderboard
 #     - title: Tuning Benchmarks
