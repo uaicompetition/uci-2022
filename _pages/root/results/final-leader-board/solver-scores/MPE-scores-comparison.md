@@ -13,6 +13,25 @@ The results below are organized as follows:
 
 # overall
 
+Current results include evaluation on the following fifteen problems that had incorrectly formatted evidence files which solvers may not have processed equally:
+    - rus_100_200_1_1
+    - rus_100_200_2_1
+    - rus_100_200_3_1
+    - rus_100_200_3_3
+    - rus_100_200_4_3
+    - rus_100_200_5_3
+    - rus_100_200_6_1
+    - rus_50_100_4_1 
+    - rus_50_100_4_3 
+    - rus_50_100_6_1 
+    - rus_50_100_6_2 
+    - rus_50_100_7_1 
+    - rus_50_100_7_2 
+    - rus_50_100_8_1 
+    - rus_50_100_9_3 
+Updated corrected results are pending.
+
+
 ## 20sec
 
 |                        Problem                         |   baseline    | daoopt-lh-mpe  |   daoopt-mpe   | toulbar2-ipr-mpe | toulbar2-vacint-mpe | toulbar2-vns-mpe |
