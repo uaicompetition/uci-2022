@@ -37,6 +37,8 @@ The results below are organized as follows:
 
 # MPE
 
+<span style="color:blue">Current results include evaluation on fifteen problems that had incorrectly formatted evidence files for which solvers may not have processed equally.</span> (see[Side-by-Side Comparisons](solver-scores/MPE-scores-comparison.md) for details).  Results are being recomputed on the corrected version of the problems and are planned to be updated.
+
 |                               Solver                               | 20sec | 1200sec | 3600sec |
 | ------------------------------------------------------------------ | ----: | ------: | ------: |
 | [toulbar2-vacint-mpe](solver-scores/toulbar2-vacint-mpe-scores.md) |  79.1 |    89.6 |    91.4 |
