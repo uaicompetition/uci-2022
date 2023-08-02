@@ -32,11 +32,11 @@ $$
 \end{align*}
 $$
 
-**MAP :** 
+**MPE :** 
 &nbsp; computing the most likely assignment to all variables given evidence
 $$ 
 \begin{align*}
-  MAP(X_i|E=e) = \arg \max_{X'} \prod_{F} f(x',e)
+  MPE(X_i|E=e) = \arg \max_{X'} \prod_{F} f(x',e)
 \end{align*}
 $$
 
