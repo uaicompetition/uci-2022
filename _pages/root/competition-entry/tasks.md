@@ -36,7 +36,7 @@ $$
 &nbsp; computing the most likely assignment to all variables given evidence
 $$ 
 \begin{align*}
-  MPE(X_i|E=e) = \arg \max_{X'} \prod_{F} f(x',e)
+  MPE(E=e) = \arg \max_{X'} \prod_{F} f(x',e)
 \end{align*}
 $$
 
@@ -46,7 +46,7 @@ after marginalizing out when marganlizing the remaining variables $$ X_S = X' \s
 
 $$ 
 \begin{align*}
-  MMAP(X_i|E=e) = \arg \max_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
+  MMAP(E=e) = \arg \max_{X_M} \sum_{X_S} \prod_{F} f(x_M, x_S, e)
 \end{align*}
 $$
 
