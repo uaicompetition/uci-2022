@@ -16,7 +16,7 @@ evidence variables $$ E $$ and the rest $$ X'= X \setminus E  $$.
 
 
 **PR :** 
-&nbsp; computing the partition function (ie. normalizing constant, or probability of evidence for Bayesian networks)
+&nbsp; computing the partition function (ie. normalizing constant)
 $$ 
 \begin{align*}
   PR(E=e) = \sum_{X'} \prod_{F} f(x',e)
