@@ -16,10 +16,10 @@ evidence variables $$ E $$ and the rest $$ X'= X \setminus E  $$.
 
 
 **PR :** 
-&nbsp; computing the partition function (ie. normalizing constant) or probability of evidence
+&nbsp; computing the partition function (ie. normalizing constant, or probability of evidence for Bayesian networks)
 $$ 
 \begin{align*}
-  PR(X'|E=e) = \sum_{X'} \prod_{F} f(x',e)
+  PR(E=e) = \sum_{X'} \prod_{F} f(x',e)
 \end{align*}
 $$
 
@@ -28,7 +28,7 @@ $$
 &nbsp; computing the marginal probability distribution over all variables given evidence
 $$ 
 \begin{align*}
-  MAR(X_i|E=e) = \frac{ \sum_{X'' = X' \setminus X_i} \prod_{F} f(x'',e) }{ PR(X'|E=e) }
+  MAR(X_i|E=e) = \frac{ \sum_{X'' = X' \setminus X_i} \prod_{F} f(x'',e) }{ PR(E=e) }
 \end{align*}
 $$
 
